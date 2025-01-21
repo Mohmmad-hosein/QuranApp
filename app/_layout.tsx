@@ -1,25 +1,37 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import {
+  NavigationContainer,
+  DarkTheme,
+  DefaultTheme,
+  NavigationIndependentTree,
+} from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+import { StatusBar } from "expo-status-bar";
+import { Fragment, useEffect, useState } from "react";
 
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { useColorScheme } from "@/hooks/useColorScheme";
+import LoadingScreen from "../components/LoadingScreen";
+import HomeScreen from "./(tabs)/HomeScreen";
+import Setting from "./(tabs)/Setting";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
+const Stack = createStackNavigator();
+
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    SpaceMono: require("../assets/fonts/A Iranian Sans/irsans.ttf"),
   });
+
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
+      setTimeout(() => setIsLoading(false), 3000); // تغییر به صفحه اصلی بعد از 3 ثانیه
     }
   }, [loaded]);
 
@@ -27,13 +39,28 @@ export default function RootLayout() {
     return null;
   }
 
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Fragment>
+      <NavigationIndependentTree>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen 
+              name="Home" 
+              component={HomeScreen} 
+              options={{ headerShown: false }} 
+            />
+            <Stack.Screen 
+              name="Setting" 
+              component={Setting} 
+              options={{ headerShown: false }} 
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </NavigationIndependentTree>
+    </Fragment>
   );
 }
