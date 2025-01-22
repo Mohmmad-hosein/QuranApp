@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useMemo } from "react";
 import {
   View,
   Text,
@@ -8,75 +8,124 @@ import {
   ScrollView,
   Image,
 } from "react-native";
-import {Picker} from '@react-native-picker/picker';
+import { Picker } from "@react-native-picker/picker";
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
-import { Feather } from '@expo/vector-icons';
+import { Feather } from "@expo/vector-icons";
+import { useTheme } from "@/context/ThemeContext";
+import { useSettings } from "@/context/SettingsContext";
 
-const Setting: React.FC = () => {
+const SettingScreen: React.FC = () => {
   const navigation = useNavigation();
-  const [fontSize, setFontSize] = useState("20");
-  const [fontType, setFontType] = useState("ایران سنس");
-  const [color, setColor] = useState("آبی");
-  const [lightLevel, setLightLevel] = useState("متوسط");
+  const { isDarkMode, toggleTheme } = useTheme();
+  const {
+    fontSize,
+    setFontSize,
+    fontType,
+    setFontType,
+  } = useSettings();
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
+
 
   const lightColors = {
     background: ["#7253EF", "#192163"],
     buttonText: "#fff",
+    buttonBackground: "rgba(255, 255, 255, 0.2)",
+    headerBackground: "rgba(255, 255, 255, 0.25)",
   };
 
   const darkColors = {
     background: ["#251663", "#060817"],
     buttonText: "#FFFFFF",
+    buttonBackground: "rgba(255, 255, 255, 0.2)",
+    headerBackground: "rgba(255, 255, 255, 0.25)",
   };
-  
+
   const colors = isDarkMode ? darkColors : lightColors;
 
   const styles = useMemo(() => {
     return StyleSheet.create({
       container: {
         flex: 1,
-        paddingVertical: 50,
       },
       header: {
+        backgroundColor: colors.headerBackground,
+        width: width * 0.9,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
         paddingHorizontal: 20,
-        marginBottom: 20,
+        paddingVertical: 15,
+        marginBottom: 27,
+        alignSelf: "center",
+        borderRadius: 10,
+        marginTop: 30,
+        height: 80,
       },
       headerText: {
-        fontSize: 24,
+        fontSize: fontSize ? parseInt(fontSize) : 24,
         color: colors.buttonText,
+        fontWeight: "bold",
+        fontFamily: fontType,
       },
       backButton: {
         padding: 10,
       },
       settingContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
         width: width * 0.9,
         marginVertical: 10,
-        backgroundColor: "rgba(255, 255, 255, 0.2)",
+        backgroundColor: colors.buttonBackground,
         borderRadius: 10,
         padding: 15,
+        alignSelf: "center",
+        borderWidth: 1,
+        borderColor: "#D9D9D9",
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        height: 60,
       },
       label: {
-        fontSize: 18,
+        fontSize: fontSize ? parseInt(fontSize) : 18,
         color: colors.buttonText,
-        marginBottom: 5,
+        fontFamily: fontType,
       },
       picker: {
         height: 50,
-        width: "100%",
+        width: "45%",
         color: colors.buttonText,
-        backgroundColor: "rgba(0, 0, 0, 0.2)",
-        borderRadius: 5,
+        backgroundColor: "rgba(255, 255, 255, 0.1)",
+        borderRadius: 15,
+      },
+      flatButton: {
+        width: width * 0.9,
+        marginVertical: 10,
+        backgroundColor: colors.buttonBackground,
+        borderRadius: 10,
+        paddingVertical: 15,
+        alignItems: "flex-end",
+        padding: 20,
+        alignSelf: "center",
+        borderWidth: 1,
+        borderColor: "#D9D9D9",
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+      },
+      flatButtonText: {
+        fontSize: fontSize ? parseInt(fontSize) : 18,
+        color: colors.buttonText,
+        fontFamily: fontType,
       },
       themeToggleButton: {
         position: "absolute",
-        top: 40,
-        right: 20,
+        top: 20,
+        right: 130,
         width: 35,
         height: 36,
         borderRadius: 18,
@@ -89,7 +138,7 @@ const Setting: React.FC = () => {
         height: 28,
       },
     });
-  }, [isDarkMode]);
+  }, [isDarkMode, fontSize, fontType]);
 
   return (
     <LinearGradient colors={colors.background} style={styles.container}>
@@ -104,39 +153,39 @@ const Setting: React.FC = () => {
           <Text style={styles.headerText}>تنظیمات</Text>
           <TouchableOpacity
             style={styles.themeToggleButton}
-            onPress={() => setIsDarkMode(!isDarkMode)}
+            onPress={toggleTheme}
           >
-            <Text style={styles.themeToggleButtonText}>
-              {isDarkMode ? (
-                <Image
-                  style={styles.darkImg}
-                  source={require("../../assets/images/icons8-sun-100.png")}
-                />
-              ) : (
-                <Image
-                  style={styles.darkImg}
-                  source={require("../../assets/images/icons8-moon-100.png")}
-                />
-              )}
-            </Text>
+            {isDarkMode ? (
+              <Image
+                style={styles.darkImg}
+                source={require("../../assets/images/icons8-sun-100.png")}
+              />
+            ) : (
+              <Image
+                style={styles.darkImg}
+                source={require("../../assets/images/icons8-moon-100.png")}
+              />
+            )}
           </TouchableOpacity>
         </View>
+
         <View style={styles.settingContainer}>
-          <Text style={styles.label}>اندازه قلم</Text>
           <Picker
             selectedValue={fontSize}
             style={styles.picker}
             onValueChange={(itemValue) => setFontSize(itemValue)}
           >
+            <Picker.Item label="14" value="14" />
             <Picker.Item label="16" value="16" />
             <Picker.Item label="18" value="18" />
             <Picker.Item label="20" value="20" />
             <Picker.Item label="22" value="22" />
             <Picker.Item label="24" value="24" />
           </Picker>
+          <Text style={styles.label}>اندازه قلم</Text>
         </View>
+
         <View style={styles.settingContainer}>
-          <Text style={styles.label}>نوع فونت</Text>
           <Picker
             selectedValue={fontType}
             style={styles.picker}
@@ -146,36 +195,23 @@ const Setting: React.FC = () => {
             <Picker.Item label="نازنین" value="نازنین" />
             <Picker.Item label="بی‌نازنین" value="بی‌نازنین" />
           </Picker>
+          <Text style={styles.label}>نوع فونت</Text>
         </View>
-        <View style={styles.settingContainer}>
-          <Text style={styles.label}>رنگ</Text>
-          <Picker
-            selectedValue={color}
-            style={styles.picker}
-            onValueChange={(itemValue) => setColor(itemValue)}
-          >
-            <Picker.Item label="آبی" value="آبی" />
-            <Picker.Item label="قرمز" value="قرمز" />
-            <Picker.Item label="سبز" value="سبز" />
-          </Picker>
-        </View>
-        <View style={styles.settingContainer}>
-          <Text style={styles.label}>سطح نور</Text>
-          <Picker
-            selectedValue={lightLevel}
-            style={styles.picker}
-            onValueChange={(itemValue) => setLightLevel(itemValue)}
-          >
-            <Picker.Item label="کم" value="کم" />
-            <Picker.Item label="متوسط" value="متوسط" />
-            <Picker.Item label="زیاد" value="زیاد" />
-          </Picker>
-        </View>
+
+
+
+        <TouchableOpacity style={styles.flatButton}>
+          <Text style={styles.flatButtonText}>گزارش</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.flatButton}>
+          <Text style={styles.flatButtonText}>درباره ما</Text>
+        </TouchableOpacity>
       </ScrollView>
     </LinearGradient>
   );
 };
 
-const { width, height } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
-export default Setting;
+export default SettingScreen;

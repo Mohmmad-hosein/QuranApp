@@ -10,10 +10,15 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
 import * as Animatable from "react-native-animatable";
+import { useTheme } from "@/context/ThemeContext";
+import { useSettings } from "@/context/SettingsContext";
+
+
 
 const HomeScreen: React.FC = () => {
   const navigation = useNavigation();
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, toggleTheme } = useTheme();
+  const { fontSize, setFontSize, fontType, setFontType, lightLevel, setLightLevel } = useSettings();
 
   const lightColors = {
     background: ["#7253EF", "#192163"],
@@ -79,7 +84,8 @@ const HomeScreen: React.FC = () => {
       },
       buttonText: {
         color: colors.buttonText,
-        fontSize: 16,
+        fontSize: fontSize ? parseInt(fontSize) : 16,  
+        fontFamily: fontType, 
         textAlign: "center",
         marginBottom: 5,
       },
@@ -107,7 +113,7 @@ const HomeScreen: React.FC = () => {
         height: 28,
       },
     });
-  }, [isDarkMode]);
+  }, [isDarkMode, fontSize, fontType]);
 
   return (
     <LinearGradient colors={colors.background} style={styles.container}>
@@ -160,7 +166,7 @@ const HomeScreen: React.FC = () => {
       </View>
       <TouchableOpacity
         style={styles.themeToggleButton}
-        onPress={() => setIsDarkMode(!isDarkMode)}
+        onPress={toggleTheme}
       >
         <Text style={styles.themeToggleButtonText}>
           {isDarkMode ? (

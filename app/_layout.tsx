@@ -14,8 +14,9 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 import LoadingScreen from "../components/LoadingScreen";
 import HomeScreen from "./(tabs)/HomeScreen";
 import Setting from "./(tabs)/Setting";
+import { ThemeProvider } from "@/context/ThemeContext";
+import { SettingsProvider } from "@/context/SettingsContext";
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 const Stack = createStackNavigator();
@@ -31,7 +32,7 @@ export default function RootLayout() {
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
-      setTimeout(() => setIsLoading(false), 3000); // تغییر به صفحه اصلی بعد از 3 ثانیه
+      setTimeout(() => setIsLoading(false), 3000); 
     }
   }, [loaded]);
 
@@ -44,7 +45,8 @@ export default function RootLayout() {
   }
 
   return (
-    <Fragment>
+    <ThemeProvider> 
+      <SettingsProvider>
       <NavigationIndependentTree>
         <NavigationContainer>
           <Stack.Navigator>
@@ -60,7 +62,9 @@ export default function RootLayout() {
             />
           </Stack.Navigator>
         </NavigationContainer>
-      </NavigationIndependentTree>
-    </Fragment>
+      </NavigationIndependentTree>        
+      </SettingsProvider>
+
+    </ThemeProvider> 
   );
 }
