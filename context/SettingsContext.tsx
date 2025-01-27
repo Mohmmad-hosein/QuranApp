@@ -38,7 +38,6 @@ export const SettingsProvider: React.FC<SettingsProviderProps> = ({ children }) 
     }
   };
 
-  // بارگذاری تنظیمات از AsyncStorage
   const loadSettings = async () => {
     try {
       const savedSettings = await AsyncStorage.getItem('settings');

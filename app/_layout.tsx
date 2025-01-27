@@ -16,6 +16,7 @@ import HomeScreen from "./(tabs)/HomeScreen";
 import Setting from "./(tabs)/Setting";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { SettingsProvider } from "@/context/SettingsContext";
+import AiScreen from "./(tabs)/aiScreen";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -58,6 +59,11 @@ export default function RootLayout() {
             <Stack.Screen 
               name="Setting" 
               component={Setting} 
+              options={{ headerShown: false }} 
+            />
+            <Stack.Screen 
+              name="AiScreen" 
+              component={AiScreen} 
               options={{ headerShown: false }} 
             />
           </Stack.Navigator>

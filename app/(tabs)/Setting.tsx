@@ -37,7 +37,7 @@ const SettingScreen: React.FC = () => {
   const darkColors = {
     background: ["#251663", "#060817"],
     buttonText: "#FFFFFF",
-    buttonBackground: "rgba(255, 255, 255, 0.2)",
+    buttonBackground: "#08326B",
     headerBackground: "rgba(255, 255, 255, 0.25)",
   };
 

@@ -18,7 +18,7 @@ import { useSettings } from "@/context/SettingsContext";
 const HomeScreen: React.FC = () => {
   const navigation = useNavigation();
   const { isDarkMode, toggleTheme } = useTheme();
-  const { fontSize, setFontSize, fontType, setFontType, lightLevel, setLightLevel } = useSettings();
+  const { fontSize, setFontSize, fontType, setFontType } = useSettings();
 
   const lightColors = {
     background: ["#7253EF", "#192163"],
@@ -125,7 +125,7 @@ const HomeScreen: React.FC = () => {
       </View>
       <View style={styles.buttonContainer}>
         <Animatable.View animation="fadeInUp" delay={300} style={styles.button}>
-          <TouchableOpacity style={styles.buttonContent}>
+          <TouchableOpacity onPress={() => navigation.navigate("AiScreen")} style={styles.buttonContent}>
             <Text style={styles.buttonText}>هوش مصنوعی</Text>
             <Image
               style={styles.buttonImg}
