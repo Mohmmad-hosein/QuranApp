@@ -134,7 +134,7 @@ const HomeScreen: React.FC = () => {
           </TouchableOpacity>
         </Animatable.View>
         <Animatable.View animation="fadeInUp" delay={400} style={styles.button}>
-          <TouchableOpacity style={styles.buttonContent}>
+          <TouchableOpacity onPress={() => navigation.navigate("Quran")} style={styles.buttonContent}>
             <Text style={styles.buttonText}>قرآن کریم</Text>
             <Image
               style={styles.buttonImg}

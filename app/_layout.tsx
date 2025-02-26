@@ -17,6 +17,7 @@ import Setting from "./(tabs)/Setting";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { SettingsProvider } from "@/context/SettingsContext";
 import AiScreen from "./(tabs)/aiScreen";
+import QuranScreen from "./(tabs)/quranScreen";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -54,6 +55,11 @@ export default function RootLayout() {
             <Stack.Screen 
               name="Home" 
               component={HomeScreen} 
+              options={{ headerShown: false }} 
+            />
+            <Stack.Screen 
+              name="Quran" 
+              component={QuranScreen} 
               options={{ headerShown: false }} 
             />
             <Stack.Screen 
