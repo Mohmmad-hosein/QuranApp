@@ -1,7 +1,7 @@
 export const surahs = [
   {
     number: 1,
-    name: "Al-Fatiha",
+    name: "الفاتحه",
     englishName: "The Opening",
     englishNameTranslation: "The Opening",
     numberOfAyahs: 7,
@@ -16,7 +16,7 @@ export const surahs = [
   },
   {
     number: 1,
-    name: "Al-Fatiha",
+    name: "الفاتحه",
     englishName: "The Opening",
     englishNameTranslation: "The Opening",
     numberOfAyahs: 7,
@@ -31,7 +31,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -95,10 +95,6 @@ export const surahs = [
         text: "ٱللَّهُ يَسْتَهْزِئُ بِهِمْ وَيَمُدُّهُمْ فِى طُغْيَٰنِهِمْ يَعْمَهُونَ",
       },
       {
-        number: 15,
-        text: "ٱللَّهُ يَسْتَهْزِئُ بِهِمْ وَيَمُدُّهُمْ فِى طُغْيَٰنِهِمْ يَعْمَهُونَ",
-      },
-      {
         number: 16,
         text: "أُو۟لَٰٓئِكَ ٱلَّذِينَ ٱشْتَرَوُا۟ ٱلضَّلَٰلَةَ بِٱلْهُدَىٰ فَمَا رَبِحَت تِّجَٰرَتُهُمْ وَمَا كَانُوا۟ مُهْتَدِينَ",
       },
@@ -122,7 +118,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -212,7 +208,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -302,7 +298,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -392,7 +388,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -482,7 +478,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -572,7 +568,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -662,7 +658,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -752,7 +748,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -842,7 +838,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -932,7 +928,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -1022,7 +1018,7 @@ export const surahs = [
   },
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -1113,7 +1109,7 @@ export const surahs = [
 
   {
     number: 2,
-    name: "Al-Baqarah",
+    name: "البقره",
     englishName: "The Cow",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
@@ -1199,31 +1195,41 @@ export const surahs = [
         number: 280,
         text: "وَإِن كَانَ ذُو عُسْرَةٍۢ فَنَظِرَةٌ إِلَىٰ مَيْسَرَةٍۢ ۚ وَأَن تَصَدَّقُوا۟ خَيْرٌۭ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ",
       },
-      {
-        number: 281,
-        text: "وَٱتَّقُوا۟ يَوْمًۭا تُرْجَعُونَ فِيهِ إِلَى ٱللَّهِ ثُمَّ تُوَفَّىٰ كُلُّ نَفْسٍۢ مَّا كَسَبَتْ وَهُمْ لَا يُظْلَمُونَ",
-      },
-      {
-        number: 282,
-        text: "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰٓ أَجَلٍۢ مُّسَمًّۭا فَٱكْتُبُوهُ ۚ وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌۭ بِٱلْعَدْلِ ۚ وَلَا يَأْبَ كَاتِبٌ أَن يَكْتُبَ كَمَا عَلَّمَهُ ٱللَّهُ ۚ فَلْيَكْتُبْ وَلْيُمْلِلِ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبْخَسْ مِنْهُ شَيْـًۭٔا ۚ فَإِن كَانَ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ سَفِيهًا أَوْ ضَعِيفًا أَوْ لَا يَسْتَطِيعُ أَن يُمِلَّ هُوَ فَلْيُمْلِلْ وَلِيُّهُۥ بِٱلْعَدْلِ ۚ وَٱسْتَشْهِدُوا۟ شَهِيدَيْنِ مِن رِّجَالِكُمْ ۖ فَإِن لَّمْ يَكُونَا رَجُلَيْنِ فَرَجُلٌۭ وَٱمْرَأَتَانِ مِمَّن تَرْضَوْنَ مِنَ ٱلشُّهَدَآءِ أَن تَضِلَّ إِحْدَىٰهُمَا فَتُذَكِّرَ إِحْدَىٰهُمَا ٱلْأُخْرَىٰ ۚ وَلَا يَأْبَ ٱلشُّهَدَآءُ إِذَا مَا دُعُوا۟ ۚ وَلَا تَسْـَٔـَٔمُوٓا۟ أَن تَكْتُبُوهُ صَغِيرًا أَوْ كَبِيرًا إِلَىٰٓ أَجَلِهِۦ ۚ ذَٰلِكُمْ أَقْسَطُ عِندَ ٱللَّهِ وَأَقْوَمُ لِلشَّهَٰدَةِ وَأَدْنَىٰٓ أَلَّا تَرْتَابُوٓا۟ ۖ إِلَّآ أَن تَكُونَ تِجَٰرَةً حَاضِرَةًۭ تُدِيرُونَهَا بَيْنَكُمْ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَلَّا تَكْتُبُوهَا ۗ وَأَشْهِدُوٓا۟ إِذَا تَبَايَعْتُمْ وَلَا يُضَآرَّ كَاتِبٌۭ وَلَا شَهِيدٌۭ ۚ وَإِن تَفْعَلُوا۟ فَإِنَّهُۥ فُسُوقٌۭ بِكُمْ ۗ وَٱتَّقُوا۟ ٱللَّهَ وَيُعَلِّمُكُمُ ٱللَّهُ ۗ وَٱللَّهُ بِكُلِّ شَىْءٍ عَلِيمٌ",
-      },
-      {
-        number: 283,
-        text: "وَإِن كُنتُمْ عَلَىٰ سَفَرٍۢ وَلَمْ تَجِدُوا۟ كَاتِبًۭا فَرِهَٰنٌۭ مَّقْبُوضَةٌۭ ۖ فَإِنْ أَمِنَ بَعْضُكُم بَعْضًۭا فَلْيُؤَدِّ ٱلَّذِى ٱؤْتُمِنَ أَمَٰنَتَهُۥ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ ۗ وَلَا تَكْتُمُوا۟ ٱلشَّهَٰدَةَ ۚ وَمَن يَكْتُمْهَا فَإِنَّهُۥٓ ءَاثِمٌۭ قَلْبُهُۥ ۗ وَٱللَّهُ بِمَا تَعْمَلُونَ عَلِيمٌ",
-      },
-      {
-        number: 284,
-        text: "لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ وَإِن تُبْدُوا۟ مَا فِىٓ أَنفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُم بِهِ ٱللَّهُ ۖ فَيَغْفِرُ لِمَن يَشَآءُ وَيُعَذِّبُ مَن يَشَآءُ ۗ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
-      },
-      {
-        number: 285,
-        text: "ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ ۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَـٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍۢ مِّن رُّسُلِهِۦ ۚ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ",
-      },
-      {
-        number: 286,
-        text: "لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًۭا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
-      },
+
     ],
+  },
+  
+  {
+    number: 2,
+    name: "البقره",
+    englishName: "The Cow",
+    englishNameTranslation: "The Cow",
+    numberOfAyahs: 286,
+    revelationType: "Medinan",
+    ayahs: [      {
+      number: 281,
+      text: "وَٱتَّقُوا۟ يَوْمًۭا تُرْجَعُونَ فِيهِ إِلَى ٱللَّهِ ثُمَّ تُوَفَّىٰ كُلُّ نَفْسٍۢ مَّا كَسَبَتْ وَهُمْ لَا يُظْلَمُونَ",
+    },
+    {
+      number: 282,
+      text: "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰٓ أَجَلٍۢ مُّسَمًّۭا فَٱكْتُبُوهُ ۚ وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌۭ بِٱلْعَدْلِ ۚ وَلَا يَأْبَ كَاتِبٌ أَن يَكْتُبَ كَمَا عَلَّمَهُ ٱللَّهُ ۚ فَلْيَكْتُبْ وَلْيُمْلِلِ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبْخَسْ مِنْهُ شَيْـًۭٔا ۚ فَإِن كَانَ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ سَفِيهًا أَوْ ضَعِيفًا أَوْ لَا يَسْتَطِيعُ أَن يُمِلَّ هُوَ فَلْيُمْلِلْ وَلِيُّهُۥ بِٱلْعَدْلِ ۚ وَٱسْتَشْهِدُوا۟ شَهِيدَيْنِ مِن رِّجَالِكُمْ ۖ فَإِن لَّمْ يَكُونَا رَجُلَيْنِ فَرَجُلٌۭ وَٱمْرَأَتَانِ مِمَّن تَرْضَوْنَ مِنَ ٱلشُّهَدَآءِ أَن تَضِلَّ إِحْدَىٰهُمَا فَتُذَكِّرَ إِحْدَىٰهُمَا ٱلْأُخْرَىٰ ۚ وَلَا يَأْبَ ٱلشُّهَدَآءُ إِذَا مَا دُعُوا۟ ۚ وَلَا تَسْـَٔـَٔمُوٓا۟ أَن تَكْتُبُوهُ صَغِيرًا أَوْ كَبِيرًا إِلَىٰٓ أَجَلِهِۦ ۚ ذَٰلِكُمْ أَقْسَطُ عِندَ ٱللَّهِ وَأَقْوَمُ لِلشَّهَٰدَةِ وَأَدْنَىٰٓ أَلَّا تَرْتَابُوٓا۟ ۖ إِلَّآ أَن تَكُونَ تِجَٰرَةً حَاضِرَةًۭ تُدِيرُونَهَا بَيْنَكُمْ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَلَّا تَكْتُبُوهَا ۗ وَأَشْهِدُوٓا۟ إِذَا تَبَايَعْتُمْ وَلَا يُضَآرَّ كَاتِبٌۭ وَلَا شَهِيدٌۭ ۚ وَإِن تَفْعَلُوا۟ فَإِنَّهُۥ فُسُوقٌۭ بِكُمْ ۗ وَٱتَّقُوا۟ ٱللَّهَ وَيُعَلِّمُكُمُ ٱللَّهُ ۗ وَٱللَّهُ بِكُلِّ شَىْءٍ عَلِيمٌ",
+    },
+    {
+      number: 283,
+      text: "وَإِن كُنتُمْ عَلَىٰ سَفَرٍۢ وَلَمْ تَجِدُوا۟ كَاتِبًۭا فَرِهَٰنٌۭ مَّقْبُوضَةٌۭ ۖ فَإِنْ أَمِنَ بَعْضُكُم بَعْضًۭا فَلْيُؤَدِّ ٱلَّذِى ٱؤْتُمِنَ أَمَٰنَتَهُۥ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ ۗ وَلَا تَكْتُمُوا۟ ٱلشَّهَٰدَةَ ۚ وَمَن يَكْتُمْهَا فَإِنَّهُۥٓ ءَاثِمٌۭ قَلْبُهُۥ ۗ وَٱللَّهُ بِمَا تَعْمَلُونَ عَلِيمٌ",
+    },
+    {
+      number: 284,
+      text: "لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ وَإِن تُبْدُوا۟ مَا فِىٓ أَنفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُم بِهِ ٱللَّهُ ۖ فَيَغْفِرُ لِمَن يَشَآءُ وَيُعَذِّبُ مَن يَشَآءُ ۗ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
+    },
+    {
+      number: 285,
+      text: "ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ ۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَـٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍۢ مِّن رُّسُلِهِۦ ۚ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ",
+    },
+    {
+      number: 286,
+      text: "لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًۭا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
+    },]
   },
   {
     number: 3,
@@ -2748,7 +2754,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -2778,7 +2784,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -2808,7 +2814,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -2858,7 +2864,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -2908,7 +2914,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -2958,7 +2964,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -3008,7 +3014,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -3058,7 +3064,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -3108,7 +3114,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -3158,7 +3164,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -3208,7 +3214,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -3258,7 +3264,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -3308,7 +3314,7 @@ export const surahs = [
   },
   {
     number: 5,
-    name: "Al-Ma'idah",
+    name: "المائدة",
     englishName: "The Table Spread",
     englishNameTranslation: "The Table Spread",
     numberOfAyahs: 120,
@@ -3358,7 +3364,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3408,7 +3414,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3458,7 +3464,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3528,7 +3534,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3598,7 +3604,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3648,7 +3654,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3698,7 +3704,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3748,7 +3754,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3798,7 +3804,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3848,7 +3854,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3898,7 +3904,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3948,7 +3954,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -3998,7 +4004,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -4048,7 +4054,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -4098,7 +4104,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -4148,7 +4154,7 @@ export const surahs = [
   },
   {
     number: 6,
-    name: "Al-An'am",
+    name: "الأنعام",
     englishName: "The Cattle",
     englishNameTranslation: "The Cattle",
     numberOfAyahs: 165,
@@ -4178,7 +4184,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4225,7 +4231,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4269,7 +4275,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4319,7 +4325,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4369,7 +4375,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4439,7 +4445,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4509,7 +4515,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4579,7 +4585,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4649,7 +4655,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4713,7 +4719,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4768,7 +4774,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4838,7 +4844,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4908,7 +4914,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -4978,7 +4984,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -5045,7 +5051,7 @@ export const surahs = [
   },
   {
     number: 7,
-    name: "Al-A'raf",
+    name: "الأعراف",
     englishName: "The Heights",
     englishNameTranslation: "The Heights",
     numberOfAyahs: 206,
@@ -5119,7 +5125,7 @@ export const surahs = [
   },
   {
     number: 8,
-    name: "Al-Anfal",
+    name: "الأنفال",
     englishName: "The Spoils of War",
     englishNameTranslation: "The Spoils of War",
     numberOfAyahs: 75,
@@ -5169,7 +5175,7 @@ export const surahs = [
   },
   {
     number: 8,
-    name: "Al-Anfal",
+    name: "الأنفال",
     englishName: "The Spoils of War",
     englishNameTranslation: "The Spoils of War",
     numberOfAyahs: 75,
@@ -5239,7 +5245,7 @@ export const surahs = [
   },
   {
     number: 8,
-    name: "Al-Anfal",
+    name: "الأنفال",
     englishName: "The Spoils of War",
     englishNameTranslation: "The Spoils of War",
     numberOfAyahs: 75,
@@ -5309,7 +5315,7 @@ export const surahs = [
   },
   {
     number: 8,
-    name: "Al-Anfal",
+    name: "الأنفال",
     englishName: "The Spoils of War",
     englishNameTranslation: "The Spoils of War",
     numberOfAyahs: 75,
@@ -5379,7 +5385,7 @@ export const surahs = [
   },
   {
     number: 8,
-    name: "Al-Anfal",
+    name: "الأنفال",
     englishName: "The Spoils of War",
     englishNameTranslation: "The Spoils of War",
     numberOfAyahs: 75,
@@ -5449,7 +5455,7 @@ export const surahs = [
   },
   {
     number: 8,
-    name: "Al-Anfal",
+    name: "الأنفال",
     englishName: "The Spoils of War",
     englishNameTranslation: "The Spoils of War",
     numberOfAyahs: 75,
@@ -5479,7 +5485,7 @@ export const surahs = [
   },
   {
     number: 9,
-    name: "At-Tawbah",
+    name: "التوبة",
     englishName: "The Repentance",
     englishNameTranslation: "The Repentance",
     numberOfAyahs: 129,
@@ -5549,7 +5555,7 @@ export const surahs = [
   },
   {
     number: 9,
-    name: "At-Tawbah",
+    name: "التوبة",
     englishName: "The Repentance",
     englishNameTranslation: "The Repentance",
     numberOfAyahs: 129,
@@ -5619,7 +5625,7 @@ export const surahs = [
   },
   {
     number: 9,
-    name: "At-Tawbah",
+    name: "التوبة",
     englishName: "The Repentance",
     englishNameTranslation: "The Repentance",
     numberOfAyahs: 129,
@@ -5689,7 +5695,7 @@ export const surahs = [
   },
   {
     number: 9,
-    name: "At-Tawbah",
+    name: "التوبة",
     englishName: "The Repentance",
     englishNameTranslation: "The Repentance",
     numberOfAyahs: 129,
@@ -5759,7 +5765,7 @@ export const surahs = [
   },
   {
     number: 9,
-    name: "At-Tawbah",
+    name: "التوبة",
     englishName: "The Repentance",
     englishNameTranslation: "The Repentance",
     numberOfAyahs: 129,
@@ -5833,7 +5839,7 @@ export const surahs = [
   },
   {
     number: 9,
-    name: "At-Tawbah",
+    name: "التوبة",
     englishName: "The Repentance",
     englishNameTranslation: "The Repentance",
     numberOfAyahs: 129,
@@ -5903,7 +5909,7 @@ export const surahs = [
   },
   {
     number: 9,
-    name: "At-Tawbah",
+    name: "التوبة",
     englishName: "The Repentance",
     englishNameTranslation: "The Repentance",
     numberOfAyahs: 129,
@@ -5973,7 +5979,7 @@ export const surahs = [
   },
   {
     number: 9,
-    name: "At-Tawbah",
+    name: "التوبة",
     englishName: "The Repentance",
     englishNameTranslation: "The Repentance",
     numberOfAyahs: 129,
@@ -6079,7 +6085,7 @@ export const surahs = [
   },
   {
     number: 10,
-    name: "Yunus",
+    name: "یونس",
     englishName: "Jonah",
     englishNameTranslation: "Jonah",
     numberOfAyahs: 109,
@@ -6126,7 +6132,7 @@ export const surahs = [
   },
   {
     number: 10,
-    name: "Yunus",
+    name: "یونس",
     englishName: "Jonah",
     englishNameTranslation: "Jonah",
     numberOfAyahs: 109,
@@ -6176,7 +6182,7 @@ export const surahs = [
   },
   {
     number: 10,
-    name: "Yunus",
+    name: "یونس",
     englishName: "Jonah",
     englishNameTranslation: "Jonah",
     numberOfAyahs: 109,
@@ -6246,7 +6252,7 @@ export const surahs = [
   },
   {
     number: 10,
-    name: "Yunus",
+    name: "یونس",
     englishName: "Jonah",
     englishNameTranslation: "Jonah",
     numberOfAyahs: 109,
@@ -6320,7 +6326,7 @@ export const surahs = [
   },
   {
     number: 10,
-    name: "Yunus",
+    name: "یونس",
     englishName: "Jonah",
     englishNameTranslation: "Jonah",
     numberOfAyahs: 109,
@@ -6387,7 +6393,7 @@ export const surahs = [
   },
   {
     number: 10,
-    name: "Yunus",
+    name: "یونس",
     englishName: "Jonah",
     englishNameTranslation: "Jonah",
     numberOfAyahs: 109,
@@ -6454,7 +6460,7 @@ export const surahs = [
   },
   {
     number: 10,
-    name: "Yunus",
+    name: "یونس",
     englishName: "Jonah",
     englishNameTranslation: "Jonah",
     numberOfAyahs: 109,
@@ -6524,7 +6530,7 @@ export const surahs = [
   },
   {
     number: 10,
-    name: "Yunus",
+    name: "یونس",
     englishName: "Jonah",
     englishNameTranslation: "Jonah",
     numberOfAyahs: 109,
@@ -6610,7 +6616,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -6660,7 +6666,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -6730,7 +6736,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -6800,7 +6806,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -6870,7 +6876,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -6940,7 +6946,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -7007,7 +7013,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -7077,7 +7083,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -7144,7 +7150,7 @@ export const surahs = [
   },
   {
     number: 11,
-    name: "Hud",
+    name: "هود",
     englishName: "Hud",
     englishNameTranslation: "Hud",
     numberOfAyahs: 123,
@@ -7183,7 +7189,7 @@ export const surahs = [
   },
   {
     number: 12,
-    name: "Yusuf",
+    name: "یوسف",
     englishName: "Joseph",
     englishNameTranslation: "Joseph",
     numberOfAyahs: 111,
@@ -7230,7 +7236,7 @@ export const surahs = [
   },
   {
     number: 12,
-    name: "Yusuf",
+    name: "یوسف",
     englishName: "Joseph",
     englishNameTranslation: "Joseph",
     numberOfAyahs: 111,
@@ -7297,7 +7303,7 @@ export const surahs = [
   },
   {
     number: 12,
-    name: "Yusuf",
+    name: "یوسف",
     englishName: "Joseph",
     englishNameTranslation: "Joseph",
     numberOfAyahs: 111,
@@ -7367,7 +7373,7 @@ export const surahs = [
   },
   {
     number: 12,
-    name: "Yusuf",
+    name: "یوسف",
     englishName: "Joseph",
     englishNameTranslation: "Joseph",
     numberOfAyahs: 111,
@@ -7437,7 +7443,7 @@ export const surahs = [
   },
   {
     number: 12,
-    name: "Yusuf",
+    name: "یوسف",
     englishName: "Joseph",
     englishNameTranslation: "Joseph",
     numberOfAyahs: 111,
@@ -7507,7 +7513,7 @@ export const surahs = [
   },
   {
     number: 12,
-    name: "Yusuf",
+    name: "یوسف",
     englishName: "Joseph",
     englishNameTranslation: "Joseph",
     numberOfAyahs: 111,
@@ -7577,7 +7583,7 @@ export const surahs = [
   },
   {
     number: 12,
-    name: "Yusuf",
+    name: "یوسف",
     englishName: "Joseph",
     englishNameTranslation: "Joseph",
     numberOfAyahs: 111,
@@ -7647,7 +7653,7 @@ export const surahs = [
   },
   {
     number: 12,
-    name: "Yusuf",
+    name: "یوسف",
     englishName: "Joseph",
     englishNameTranslation: "Joseph",
     numberOfAyahs: 111,
@@ -10303,7 +10309,7 @@ export const surahs = [
   },
   {
     number: 19,
-    name: "Maryam",
+    name: "مریم",
     englishName: "Mary",
     englishNameTranslation: "Mary",
     numberOfAyahs: 98,
@@ -10353,7 +10359,7 @@ export const surahs = [
   },
   {
     number: 19,
-    name: "Maryam",
+    name: "مریم",
     englishName: "Mary",
     englishNameTranslation: "Mary",
     numberOfAyahs: 98,
@@ -10407,7 +10413,7 @@ export const surahs = [
   },
   {
     number: 19,
-    name: "Maryam",
+    name: "مریم",
     englishName: "Mary",
     englishNameTranslation: "Mary",
     numberOfAyahs: 98,
@@ -10481,7 +10487,7 @@ export const surahs = [
   },
   {
     number: 19,
-    name: "Maryam",
+    name: "مریم",
     englishName: "Mary",
     englishNameTranslation: "Mary",
     numberOfAyahs: 98,
@@ -10548,7 +10554,7 @@ export const surahs = [
   },
   {
     number: 19,
-    name: "Maryam",
+    name: "مریم",
     englishName: "Mary",
     englishNameTranslation: "Mary",
     numberOfAyahs: 98,
@@ -10615,7 +10621,7 @@ export const surahs = [
   },
   {
     number: 19,
-    name: "Maryam",
+    name: "مریم",
     englishName: "Mary",
     englishNameTranslation: "Mary",
     numberOfAyahs: 98,
@@ -10682,7 +10688,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -10731,7 +10737,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -10768,7 +10774,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -10808,7 +10814,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -10872,7 +10878,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -10936,7 +10942,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -11000,7 +11006,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -11064,7 +11070,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -11122,7 +11128,7 @@ export const surahs = [
   },
   {
     number: 20,
-    name: "Taha",
+    name: "طه",
     englishName: "Taha",
     englishNameTranslation: "Taha",
     numberOfAyahs: 135,
@@ -11192,7 +11198,7 @@ export const surahs = [
   },
   {
     number: 21,
-    name: "Al-Anbiya",
+    name: "الأنبياء",
     englishName: "The Prophets",
     englishNameTranslation: "The Prophets",
     numberOfAyahs: 112,
@@ -11259,7 +11265,7 @@ export const surahs = [
   },
   {
     number: 21,
-    name: "Al-Anbiya",
+    name: "الأنبياء",
     englishName: "The Prophets",
     englishNameTranslation: "The Prophets",
     numberOfAyahs: 112,
@@ -11326,7 +11332,7 @@ export const surahs = [
   },
   {
     number: 21,
-    name: "Al-Anbiya",
+    name: "الأنبياء",
     englishName: "The Prophets",
     englishNameTranslation: "The Prophets",
     numberOfAyahs: 112,
@@ -11396,7 +11402,7 @@ export const surahs = [
   },
   {
     number: 21,
-    name: "Al-Anbiya",
+    name: "الأنبياء",
     englishName: "The Prophets",
     englishNameTranslation: "The Prophets",
     numberOfAyahs: 112,
@@ -11466,7 +11472,7 @@ export const surahs = [
   },
   {
     number: 21,
-    name: "Al-Anbiya",
+    name: "الأنبياء",
     englishName: "The Prophets",
     englishNameTranslation: "The Prophets",
     numberOfAyahs: 112,
@@ -11536,7 +11542,7 @@ export const surahs = [
   },
   {
     number: 21,
-    name: "Al-Anbiya",
+    name: "الأنبياء",
     englishName: "The Prophets",
     englishNameTranslation: "The Prophets",
     numberOfAyahs: 112,
@@ -11606,7 +11612,7 @@ export const surahs = [
   },
   {
     number: 21,
-    name: "Al-Anbiya",
+    name: "الأنبياء",
     englishName: "The Prophets",
     englishNameTranslation: "The Prophets",
     numberOfAyahs: 112,
@@ -11676,7 +11682,7 @@ export const surahs = [
   },
   {
     number: 21,
-    name: "Al-Anbiya",
+    name: "الأنبياء",
     englishName: "The Prophets",
     englishNameTranslation: "The Prophets",
     numberOfAyahs: 112,
@@ -11714,7 +11720,7 @@ export const surahs = [
   },
   {
     number: 22,
-    name: "Al-Hajj",
+    name: "الحج",
     englishName: "The Pilgrimage",
     englishNameTranslation: "The Pilgrimage",
     numberOfAyahs: 78,
@@ -11784,7 +11790,7 @@ export const surahs = [
   },
   {
     number: 22,
-    name: "Al-Hajj",
+    name: "الحج",
     englishName: "The Pilgrimage",
     englishNameTranslation: "The Pilgrimage",
     numberOfAyahs: 78,
@@ -11848,7 +11854,7 @@ export const surahs = [
   },
   {
     number: 22,
-    name: "Al-Hajj",
+    name: "الحج",
     englishName: "The Pilgrimage",
     englishNameTranslation: "The Pilgrimage",
     numberOfAyahs: 78,
@@ -11915,7 +11921,7 @@ export const surahs = [
   },
   {
     number: 22,
-    name: "Al-Hajj",
+    name: "الحج",
     englishName: "The Pilgrimage",
     englishNameTranslation: "The Pilgrimage",
     numberOfAyahs: 78,
@@ -11985,7 +11991,7 @@ export const surahs = [
   },
   {
     number: 22,
-    name: "Al-Hajj",
+    name: "الحج",
     englishName: "The Pilgrimage",
     englishNameTranslation: "The Pilgrimage",
     numberOfAyahs: 78,
@@ -12067,7 +12073,7 @@ export const surahs = [
   },
   {
     number: 23,
-    name: "Al-Mu'minun",
+    name: "المؤمنون",
     englishName: "The Believers",
     englishNameTranslation: "The Believers",
     numberOfAyahs: 118,
@@ -12113,7 +12119,7 @@ export const surahs = [
   },
   {
     number: 23,
-    name: "Al-Mu'minun",
+    name: "المؤمنون",
     englishName: "The Believers",
     englishNameTranslation: "The Believers",
     numberOfAyahs: 118,
@@ -12174,7 +12180,7 @@ export const surahs = [
   },
   {
     number: 23,
-    name: "Al-Mu'minun",
+    name: "المؤمنون",
     englishName: "The Believers",
     englishNameTranslation: "The Believers",
     numberOfAyahs: 118,
@@ -12235,7 +12241,7 @@ export const surahs = [
   },
   {
     number: 23,
-    name: "Al-Mu'minun",
+    name: "المؤمنون",
     englishName: "The Believers",
     englishNameTranslation: "The Believers",
     numberOfAyahs: 118,
@@ -12296,7 +12302,7 @@ export const surahs = [
   },
   {
     number: 23,
-    name: "Al-Mu'minun",
+    name: "المؤمنون",
     englishName: "The Believers",
     englishNameTranslation: "The Believers",
     numberOfAyahs: 118,
@@ -12354,7 +12360,7 @@ export const surahs = [
   },
   {
     number: 23,
-    name: "Al-Mu'minun",
+    name: "المؤمنون",
     englishName: "The Believers",
     englishNameTranslation: "The Believers",
     numberOfAyahs: 118,
@@ -12418,7 +12424,7 @@ export const surahs = [
   },
   {
     number: 23,
-    name: "Al-Mu'minun",
+    name: "المؤمنون",
     englishName: "The Believers",
     englishNameTranslation: "The Believers",
     numberOfAyahs: 118,
@@ -12477,7 +12483,7 @@ export const surahs = [
   },
   {
     number: 24,
-    name: "An-Nur",
+    name: "النور",
     englishName: "The Light",
     englishNameTranslation: "The Light",
     numberOfAyahs: 64,
@@ -12547,7 +12553,7 @@ export const surahs = [
   },
   {
     number: 24,
-    name: "An-Nur",
+    name: "النور",
     englishName: "The Light",
     englishNameTranslation: "The Light",
     numberOfAyahs: 64,
@@ -12617,7 +12623,7 @@ export const surahs = [
   },
   {
     number: 24,
-    name: "An-Nur",
+    name: "النور",
     englishName: "The Light",
     englishNameTranslation: "The Light",
     numberOfAyahs: 64,
@@ -12687,7 +12693,7 @@ export const surahs = [
   },
   {
     number: 24,
-    name: "An-Nur",
+    name: "النور",
     englishName: "The Light",
     englishNameTranslation: "The Light",
     numberOfAyahs: 64,
@@ -12773,7 +12779,7 @@ export const surahs = [
   },
   {
     number: 25,
-    name: "Al-Furqan",
+    name: "الفرقان",
     englishName: "The Criterion",
     englishNameTranslation: "The Criterion",
     numberOfAyahs: 77,
@@ -12843,7 +12849,7 @@ export const surahs = [
   },
   {
     number: 25,
-    name: "Al-Furqan",
+    name: "الفرقان",
     englishName: "The Criterion",
     englishNameTranslation: "The Criterion",
     numberOfAyahs: 77,
@@ -12913,7 +12919,7 @@ export const surahs = [
   },
   {
     number: 25,
-    name: "Al-Furqan",
+    name: "الفرقان",
     englishName: "The Criterion",
     englishNameTranslation: "The Criterion",
     numberOfAyahs: 77,
@@ -12983,7 +12989,7 @@ export const surahs = [
   },
   {
     number: 25,
-    name: "Al-Furqan",
+    name: "الفرقان",
     englishName: "The Criterion",
     englishNameTranslation: "The Criterion",
     numberOfAyahs: 77,
@@ -13058,7 +13064,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13113,7 +13119,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13171,7 +13177,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13232,7 +13238,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13275,7 +13281,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13315,7 +13321,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13352,7 +13358,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13386,7 +13392,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13432,7 +13438,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13472,7 +13478,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13512,7 +13518,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13558,7 +13564,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13598,7 +13604,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13644,7 +13650,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13687,7 +13693,7 @@ export const surahs = [
   },
   {
     number: 26,
-    name: "Ash-Shu'ara",
+    name: "الشعراء",
     englishName: "The Poets",
     englishNameTranslation: "The Poets",
     numberOfAyahs: 227,
@@ -13732,7 +13738,7 @@ export const surahs = [
   },
   {
     number: 27,
-    name: "An-Naml",
+    name: "النمل",
     englishName: "The Ant",
     englishNameTranslation: "The Ant",
     numberOfAyahs: 93,
@@ -13799,7 +13805,7 @@ export const surahs = [
   },
   {
     number: 27,
-    name: "An-Naml",
+    name: "النمل",
     englishName: "The Ant",
     englishNameTranslation: "The Ant",
     numberOfAyahs: 93,
@@ -13869,7 +13875,7 @@ export const surahs = [
   },
   {
     number: 27,
-    name: "An-Naml",
+    name: "النمل",
     englishName: "The Ant",
     englishNameTranslation: "The Ant",
     numberOfAyahs: 93,
@@ -13936,7 +13942,7 @@ export const surahs = [
   },
   {
     number: 27,
-    name: "An-Naml",
+    name: "النمل",
     englishName: "The Ant",
     englishNameTranslation: "The Ant",
     numberOfAyahs: 93,
@@ -14006,7 +14012,7 @@ export const surahs = [
   },
   {
     number: 27,
-    name: "An-Naml",
+    name: "النمل",
     englishName: "The Ant",
     englishNameTranslation: "The Ant",
     numberOfAyahs: 93,
@@ -14076,7 +14082,7 @@ export const surahs = [
   },
   {
     number: 27,
-    name: "An-Naml",
+    name: "النمل",
     englishName: "The Ant",
     englishNameTranslation: "The Ant",
     numberOfAyahs: 93,
@@ -14155,7 +14161,7 @@ export const surahs = [
   },
   {
     number: 28,
-    name: "Al-Qasas",
+    name: "القصاص",
     englishName: "The Stories",
     englishNameTranslation: "The Stories",
     numberOfAyahs: 88,
@@ -14219,7 +14225,7 @@ export const surahs = [
   },
   {
     number: 28,
-    name: "Al-Qasas",
+    name: "القصاص",
     englishName: "The Stories",
     englishNameTranslation: "The Stories",
     numberOfAyahs: 88,
@@ -14289,7 +14295,7 @@ export const surahs = [
   },
   {
     number: 28,
-    name: "Al-Qasas",
+    name: "القصاص",
     englishName: "The Stories",
     englishNameTranslation: "The Stories",
     numberOfAyahs: 88,
@@ -14359,7 +14365,7 @@ export const surahs = [
   },
   {
     number: 28,
-    name: "Al-Qasas",
+    name: "القصاص",
     englishName: "The Stories",
     englishNameTranslation: "The Stories",
     numberOfAyahs: 88,
@@ -14429,7 +14435,7 @@ export const surahs = [
   },
   {
     number: 28,
-    name: "Al-Qasas",
+    name: "القصاص",
     englishName: "The Stories",
     englishNameTranslation: "The Stories",
     numberOfAyahs: 88,
@@ -14499,7 +14505,7 @@ export const surahs = [
   },
   {
     number: 28,
-    name: "Al-Qasas",
+    name: "القصاص",
     englishName: "The Stories",
     englishNameTranslation: "The Stories",
     numberOfAyahs: 88,
@@ -14561,7 +14567,7 @@ export const surahs = [
   },
   {
     number: 29,
-    name: "Al-Ankabut",
+    name: "العنكبوت",
     englishName: "The Spider",
     englishNameTranslation: "The Spider",
     numberOfAyahs: 69,
@@ -14628,7 +14634,7 @@ export const surahs = [
   },
   {
     number: 29,
-    name: "Al-Ankabut",
+    name: "العنكبوت",
     englishName: "The Spider",
     englishNameTranslation: "The Spider",
     numberOfAyahs: 69,
@@ -14698,7 +14704,7 @@ export const surahs = [
   },
   {
     number: 29,
-    name: "Al-Ankabut",
+    name: "العنكبوت",
     englishName: "The Spider",
     englishNameTranslation: "The Spider",
     numberOfAyahs: 69,
@@ -14768,7 +14774,7 @@ export const surahs = [
   },
   {
     number: 29,
-    name: "Al-Ankabut",
+    name: "العنكبوت",
     englishName: "The Spider",
     englishNameTranslation: "The Spider",
     numberOfAyahs: 69,
@@ -14838,7 +14844,7 @@ export const surahs = [
   },
   {
     number: 29,
-    name: "Al-Ankabut",
+    name: "العنكبوت",
     englishName: "The Spider",
     englishNameTranslation: "The Spider",
     numberOfAyahs: 69,
@@ -14884,7 +14890,7 @@ export const surahs = [
   },
   {
     number: 30,
-    name: "Ar-Rum",
+    name: "الروم",
     englishName: "The Romans",
     englishNameTranslation: "The Romans",
     numberOfAyahs: 60,
@@ -14948,7 +14954,7 @@ export const surahs = [
   },
   {
     number: 30,
-    name: "Ar-Rum",
+    name: "الروم",
     englishName: "The Romans",
     englishNameTranslation: "The Romans",
     numberOfAyahs: 60,
@@ -15018,7 +15024,7 @@ export const surahs = [
   },
   {
     number: 30,
-    name: "Ar-Rum",
+    name: "الروم",
     englishName: "The Romans",
     englishNameTranslation: "The Romans",
     numberOfAyahs: 60,
@@ -15088,7 +15094,7 @@ export const surahs = [
   },
   {
     number: 30,
-    name: "Ar-Rum",
+    name: "الروم",
     englishName: "The Romans",
     englishNameTranslation: "The Romans",
     numberOfAyahs: 60,
@@ -15158,7 +15164,7 @@ export const surahs = [
   },
   {
     number: 31,
-    name: "Luqman",
+    name: "لقمان",
     englishName: "Luqman",
     englishNameTranslation: "Luqman",
     numberOfAyahs: 34,
@@ -15219,7 +15225,7 @@ export const surahs = [
   },
   {
     number: 31,
-    name: "Luqman",
+    name: "لقمان",
     englishName: "Luqman",
     englishNameTranslation: "Luqman",
     numberOfAyahs: 34,
@@ -15305,7 +15311,7 @@ export const surahs = [
   },
   {
     number: 32,
-    name: "As-Sajda",
+    name: "السجدة",
     englishName: "The Prostration",
     englishNameTranslation: "The Prostration",
     numberOfAyahs: 30,
@@ -15372,7 +15378,7 @@ export const surahs = [
   },
   {
     number: 32,
-    name: "As-Sajda",
+    name: "السجدة",
     englishName: "The Prostration",
     englishNameTranslation: "The Prostration",
     numberOfAyahs: 30,
@@ -15442,7 +15448,7 @@ export const surahs = [
   },
   {
     number: 33,
-    name: "Al-Ahzab",
+    name: "الأحزاب",
     englishName: "The Clans",
     englishNameTranslation: "The Clans",
     numberOfAyahs: 73,
@@ -15512,7 +15518,7 @@ export const surahs = [
   },
   {
     number: 33,
-    name: "Al-Ahzab",
+    name: "الأحزاب",
     englishName: "The Clans",
     englishNameTranslation: "The Clans",
     numberOfAyahs: 73,
@@ -15582,7 +15588,7 @@ export const surahs = [
   },
   {
     number: 33,
-    name: "Al-Ahzab",
+    name: "الأحزاب",
     englishName: "The Clans",
     englishNameTranslation: "The Clans",
     numberOfAyahs: 73,
@@ -15649,7 +15655,7 @@ export const surahs = [
   },
   {
     number: 33,
-    name: "Al-Ahzab",
+    name: "الأحزاب",
     englishName: "The Clans",
     englishNameTranslation: "The Clans",
     numberOfAyahs: 73,
@@ -15719,7 +15725,7 @@ export const surahs = [
   },
   {
     number: 33,
-    name: "Al-Ahzab",
+    name: "الأحزاب",
     englishName: "The Clans",
     englishNameTranslation: "The Clans",
     numberOfAyahs: 73,
@@ -15781,7 +15787,7 @@ export const surahs = [
   },
   {
     number: 34,
-    name: "Saba",
+    name: "سابا",
     englishName: "Sheba",
     englishNameTranslation: "Sheba",
     numberOfAyahs: 54,
@@ -15851,7 +15857,7 @@ export const surahs = [
   },
   {
     number: 34,
-    name: "Saba",
+    name: "سابا",
     englishName: "Sheba",
     englishNameTranslation: "Sheba",
     numberOfAyahs: 54,
@@ -15921,7 +15927,7 @@ export const surahs = [
   },
   {
     number: 34,
-    name: "Saba",
+    name: "سابا",
     englishName: "Sheba",
     englishNameTranslation: "Sheba",
     numberOfAyahs: 54,
@@ -15991,7 +15997,7 @@ export const surahs = [
   },
   {
     number: 34,
-    name: "Saba",
+    name: "سابا",
     englishName: "Sheba",
     englishNameTranslation: "Sheba",
     numberOfAyahs: 54,
@@ -16037,7 +16043,7 @@ export const surahs = [
   },
   {
     number: 35,
-    name: "Fatir",
+    name: "فاطر",
     englishName: "The Originator",
     englishNameTranslation: "The Originator",
     numberOfAyahs: 45,
@@ -16107,7 +16113,7 @@ export const surahs = [
   },
   {
     number: 35,
-    name: "Fatir",
+    name: "فاطر",
     englishName: "The Originator",
     englishNameTranslation: "The Originator",
     numberOfAyahs: 45,
@@ -16162,7 +16168,7 @@ export const surahs = [
   },
   {
     number: 35,
-    name: "Fatir",
+    name: "فاطر",
     englishName: "The Originator",
     englishNameTranslation: "The Originator",
     numberOfAyahs: 45,
@@ -16232,7 +16238,7 @@ export const surahs = [
   },
   {
     number: 36,
-    name: "Ya-Sin",
+    name: "يا سين",
     englishName: "Yaseen",
     englishNameTranslation: "Yaseen",
     numberOfAyahs: 83,
@@ -16287,7 +16293,7 @@ export const surahs = [
   },
   {
     number: 36,
-    name: "Ya-Sin",
+    name: "يا سين",
     englishName: "Yaseen",
     englishNameTranslation: "Yaseen",
     numberOfAyahs: 83,
@@ -16348,7 +16354,7 @@ export const surahs = [
   },
   {
     number: 36,
-    name: "Ya-Sin",
+    name: "يا سين",
     englishName: "Yaseen",
     englishNameTranslation: "Yaseen",
     numberOfAyahs: 83,
@@ -16415,7 +16421,7 @@ export const surahs = [
   },
   {
     number: 36,
-    name: "Ya-Sin",
+    name: "يا سين",
     englishName: "Yaseen",
     englishNameTranslation: "Yaseen",
     numberOfAyahs: 83,
@@ -16476,7 +16482,7 @@ export const surahs = [
   },
   {
     number: 36,
-    name: "Ya-Sin",
+    name: "يا سين",
     englishName: "Yaseen",
     englishNameTranslation: "Yaseen",
     numberOfAyahs: 83,
@@ -16540,7 +16546,7 @@ export const surahs = [
   },
   {
     number: 36,
-    name: "Ya-Sin",
+    name: "يا سين",
     englishName: "Yaseen",
     englishNameTranslation: "Yaseen",
     numberOfAyahs: 83,
@@ -16582,7 +16588,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16622,7 +16628,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16671,7 +16677,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16708,7 +16714,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16748,7 +16754,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16788,7 +16794,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16819,7 +16825,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16859,7 +16865,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16893,7 +16899,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16924,7 +16930,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16961,7 +16967,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -16989,7 +16995,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -17023,7 +17029,7 @@ export const surahs = [
   },
   {
     number: 37,
-    name: "As-Saffat",
+    name: "الصافات",
     englishName: "As-Saffat",
     englishNameTranslation: "Those drawn up in Ranks",
     numberOfAyahs: 182,
@@ -17035,7 +17041,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "Sad",
+    name: "حزين",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17099,7 +17105,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "Sad",
+    name: "حزين",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17169,7 +17175,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "Sad",
+    name: "حزين",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17233,7 +17239,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "Sad",
+    name: "حزين",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17282,7 +17288,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "Sad",
+    name: "حزين",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17340,7 +17346,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "Sad",
+    name: "حزين",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17378,7 +17384,7 @@ export const surahs = [
   },
   {
     number: 39,
-    name: "Az-Zumar",
+    name: "الزمر",
     englishName: "Az-Zumar",
     englishNameTranslation: "The Groups",
     numberOfAyahs: 75,
@@ -17442,7 +17448,7 @@ export const surahs = [
   },
   {
     number: 39,
-    name: "Az-Zumar",
+    name: "الزمر",
     englishName: "Az-Zumar",
     englishNameTranslation: "The Groups",
     numberOfAyahs: 75,
@@ -17509,7 +17515,7 @@ export const surahs = [
   },
   {
     number: 39,
-    name: "Az-Zumar",
+    name: "الزمر",
     englishName: "Az-Zumar",
     englishNameTranslation: "The Groups",
     numberOfAyahs: 75,
@@ -17579,7 +17585,7 @@ export const surahs = [
   },
   {
     number: 39,
-    name: "Az-Zumar",
+    name: "الزمر",
     englishName: "Az-Zumar",
     englishNameTranslation: "The Groups",
     numberOfAyahs: 75,
@@ -17649,7 +17655,7 @@ export const surahs = [
   },
   {
     number: 39,
-    name: "Az-Zumar",
+    name: "الزمر",
     englishName: "Az-Zumar",
     englishNameTranslation: "The Groups",
     numberOfAyahs: 75,
@@ -17716,7 +17722,7 @@ export const surahs = [
   },
   {
     number: 40,
-    name: "Ghafir",
+    name: "غافير",
     englishName: "Ghafir",
     englishNameTranslation: "The Forgiver",
     numberOfAyahs: 85,
@@ -17783,7 +17789,7 @@ export const surahs = [
   },
   {
     number: 40,
-    name: "Ghafir",
+    name: "غافير",
     englishName: "Ghafir",
     englishNameTranslation: "The Forgiver",
     numberOfAyahs: 85,
@@ -17853,7 +17859,7 @@ export const surahs = [
   },
   {
     number: 40,
-    name: "Ghafir",
+    name: "غافير",
     englishName: "Ghafir",
     englishNameTranslation: "The Forgiver",
     numberOfAyahs: 85,
@@ -17923,7 +17929,7 @@ export const surahs = [
   },
   {
     number: 40,
-    name: "Ghafir",
+    name: "غافير",
     englishName: "Ghafir",
     englishNameTranslation: "The Forgiver",
     numberOfAyahs: 85,
@@ -17990,7 +17996,7 @@ export const surahs = [
   },
   {
     number: 40,
-    name: "Ghafir",
+    name: "غافير",
     englishName: "Ghafir",
     englishNameTranslation: "The Forgiver",
     numberOfAyahs: 85,
@@ -18054,7 +18060,7 @@ export const surahs = [
   },
   {
     number: 40,
-    name: "Ghafir",
+    name: "غافير",
     englishName: "Ghafir",
     englishNameTranslation: "The Forgiver",
     numberOfAyahs: 85,
@@ -18104,7 +18110,7 @@ export const surahs = [
   },
   {
     number: 41,
-    name: "Fussilat",
+    name: "فسيلات",
     englishName: "Fussilat",
     englishNameTranslation: "Explained in Detail",
     numberOfAyahs: 54,
@@ -18168,7 +18174,7 @@ export const surahs = [
   },
   {
     number: 41,
-    name: "Fussilat",
+    name: "فسيلات",
     englishName: "Fussilat",
     englishNameTranslation: "Explained in Detail",
     numberOfAyahs: 54,
@@ -18238,7 +18244,7 @@ export const surahs = [
   },
   {
     number: 41,
-    name: "Fussilat",
+    name: "فسيلات",
     englishName: "Fussilat",
     englishNameTranslation: "Explained in Detail",
     numberOfAyahs: 54,
@@ -18305,7 +18311,7 @@ export const surahs = [
   },
   {
     number: 41,
-    name: "Fussilat",
+    name: "فسيلات",
     englishName: "Fussilat",
     englishNameTranslation: "Explained in Detail",
     numberOfAyahs: 54,
@@ -18351,7 +18357,7 @@ export const surahs = [
   },
   {
     number: 42,
-    name: "Ash-Shura",
+    name: "الشورى",
     englishName: "Ash-Shura",
     englishNameTranslation: "Consultation",
     numberOfAyahs: 53,
@@ -18415,7 +18421,7 @@ export const surahs = [
   },
   {
     number: 42,
-    name: "Ash-Shura",
+    name: "الشورى",
     englishName: "Ash-Shura",
     englishNameTranslation: "Consultation",
     numberOfAyahs: 53,
@@ -18485,7 +18491,7 @@ export const surahs = [
   },
   {
     number: 42,
-    name: "Ash-Shura",
+    name: "الشورى",
     englishName: "Ash-Shura",
     englishNameTranslation: "Consultation",
     numberOfAyahs: 53,
@@ -18555,7 +18561,7 @@ export const surahs = [
   },
   {
     number: 42,
-    name: "Ash-Shura",
+    name: "الشورى",
     englishName: "Ash-Shura",
     englishNameTranslation: "Consultation",
     numberOfAyahs: 53,
@@ -18597,7 +18603,7 @@ export const surahs = [
   },
   {
     number: 43,
-    name: "Az-Zukhruf",
+    name: "الزخرف",
     englishName: "Az-Zukhruf",
     englishNameTranslation: "Ornaments of Gold",
     numberOfAyahs: 89,
@@ -18655,7 +18661,7 @@ export const surahs = [
   },
   {
     number: 43,
-    name: "Az-Zukhruf",
+    name: "الزخرف",
     englishName: "Az-Zukhruf",
     englishNameTranslation: "Ornaments of Gold",
     numberOfAyahs: 89,
@@ -18722,7 +18728,7 @@ export const surahs = [
   },
   {
     number: 43,
-    name: "Az-Zukhruf",
+    name: "الزخرف",
     englishName: "Az-Zukhruf",
     englishNameTranslation: "Ornaments of Gold",
     numberOfAyahs: 89,
@@ -18792,7 +18798,7 @@ export const surahs = [
   },
   {
     number: 43,
-    name: "Az-Zukhruf",
+    name: "الزخرف",
     englishName: "Az-Zukhruf",
     englishNameTranslation: "Ornaments of Gold",
     numberOfAyahs: 89,
@@ -18862,7 +18868,7 @@ export const surahs = [
   },
   {
     number: 43,
-    name: "Az-Zukhruf",
+    name: "الزخرف",
     englishName: "Az-Zukhruf",
     englishNameTranslation: "Ornaments of Gold",
     numberOfAyahs: 89,
@@ -18929,7 +18935,7 @@ export const surahs = [
   },
   {
     number: 43,
-    name: "Az-Zukhruf",
+    name: "الزخرف",
     englishName: "Az-Zukhruf",
     englishNameTranslation: "Ornaments of Gold",
     numberOfAyahs: 89,
@@ -22343,7 +22349,7 @@ export const surahs = [
   },
   {
     number: 69,
-    name: "الحاقه",
+    name: "الحاقة",
     englishName: "Al-Haaqqa",
     englishNameTranslation: "The Reality",
     numberOfAyahs: 52,
@@ -22389,7 +22395,7 @@ export const surahs = [
   },
   {
     number: 69,
-    name: "الحاقه",
+    name: "الحاقة",
     englishName: "Al-Haaqqa",
     englishNameTranslation: "The Reality",
     numberOfAyahs: 52,
@@ -22432,7 +22438,7 @@ export const surahs = [
   },
   {
     number: 69,
-    name: "الحاقه",
+    name: "الحاقة",
     englishName: "Al-Haaqqa",
     englishNameTranslation: "The Reality",
     numberOfAyahs: 52,
@@ -22466,7 +22472,7 @@ export const surahs = [
   },
   {
     number: 69,
-    name: "الحاقه",
+    name: "الحاقة",
     englishName: "Al-Haaqqa",
     englishNameTranslation: "The Reality",
     numberOfAyahs: 52,

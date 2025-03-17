@@ -9,15 +9,19 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import { Fragment, useEffect, useState } from "react";
-
+import { TourGuideProvider } from 'rn-tourguide';
+import AyahScreen from "./(tabs)/AyahScreen";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import LoadingScreen from "../components/LoadingScreen";
 import HomeScreen from "./(tabs)/HomeScreen";
 import Setting from "./(tabs)/Setting";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { SettingsProvider } from "@/context/SettingsContext";
+import { FavoritesProvider } from "@/context/FavoritesContext";
 import AiScreen from "./(tabs)/aiScreen";
 import QuranScreen from "./(tabs)/quranScreen";
+import SurahDetails from "./(tabs)/SurahDetails";
+import FavoritesScreen from "./(tabs)/FavoritesScreen";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -34,7 +38,7 @@ export default function RootLayout() {
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
-      setTimeout(() => setIsLoading(false), 3000); 
+      setTimeout(() => setIsLoading(false), 3000);
     }
   }, [loaded]);
 
@@ -47,36 +51,54 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider> 
-      <SettingsProvider>
-      <NavigationIndependentTree>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen 
-              name="Home" 
-              component={HomeScreen} 
-              options={{ headerShown: false }} 
-            />
-            <Stack.Screen 
-              name="Quran" 
-              component={QuranScreen} 
-              options={{ headerShown: false }} 
-            />
-            <Stack.Screen 
-              name="Setting" 
-              component={Setting} 
-              options={{ headerShown: false }} 
-            />
-            <Stack.Screen 
-              name="AiScreen" 
-              component={AiScreen} 
-              options={{ headerShown: false }} 
-            />
-          </Stack.Navigator>
-        </NavigationContainer>
-      </NavigationIndependentTree>        
-      </SettingsProvider>
-
-    </ThemeProvider> 
+    <TourGuideProvider>
+      <ThemeProvider>
+        <SettingsProvider>
+          <FavoritesProvider>
+            <NavigationIndependentTree>
+              <NavigationContainer>
+                <Stack.Navigator>
+                  <Stack.Screen
+                    name="Home"
+                    component={HomeScreen}
+                    options={{ headerShown: false }}
+                  />
+                  <Stack.Screen
+                    name="Quran"
+                    component={QuranScreen}
+                    options={{ headerShown: false }}
+                  />
+                  <Stack.Screen
+                    name="Setting"
+                    component={Setting}
+                    options={{ headerShown: false }}
+                  />
+                  <Stack.Screen
+                    name="AiScreen"
+                    component={AiScreen}
+                    options={{ headerShown: false }}
+                  />
+                  <Stack.Screen
+                    name="SurahDetails"
+                    component={SurahDetails}
+                    options={{ headerShown: false }}
+                  />
+                  <Stack.Screen
+                    name="AyahScreen"
+                    component={AyahScreen}
+                    options={{ headerShown: false }}
+                  />
+                  <Stack.Screen
+                    name="FavoritesScreen"
+                    component={FavoritesScreen}
+                    options={{ headerShown: false }}
+                  />
+                </Stack.Navigator>
+              </NavigationContainer>
+            </NavigationIndependentTree>
+          </FavoritesProvider>
+        </SettingsProvider>
+      </ThemeProvider>
+    </TourGuideProvider>
   );
 }
