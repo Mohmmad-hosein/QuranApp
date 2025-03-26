@@ -22,6 +22,7 @@ import AiScreen from "./(tabs)/aiScreen";
 import QuranScreen from "./(tabs)/quranScreen";
 import SurahDetails from "./(tabs)/SurahDetails";
 import FavoritesScreen from "./(tabs)/FavoritesScreen";
+import NotesScreen from "./(tabs)/NotesScreen";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -91,6 +92,11 @@ export default function RootLayout() {
                   <Stack.Screen
                     name="FavoritesScreen"
                     component={FavoritesScreen}
+                    options={{ headerShown: false }}
+                  />
+                  <Stack.Screen
+                    name="NotesScreen"
+                    component={NotesScreen}
                     options={{ headerShown: false }}
                   />
                 </Stack.Navigator>

@@ -21,14 +21,15 @@ import { surahs } from "@/assets/data/surahs";
 import { useFavorites } from "@/context/FavoritesContext";
 import { Surah, Ayah } from "@/types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import WalkthroughTooltip from 'react-native-walkthrough-tooltip'; // پکیج برای تور
-import AsyncStorage from '@react-native-async-storage/async-storage'; // برای ذخیره‌سازی
+import WalkthroughTooltip from 'react-native-walkthrough-tooltip';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type RootStackParamList = {
   SurahDetails: { surah: Surah };
   AyahScreen: { surah: Surah };
   FavoritesScreen: undefined;
   QuranScreen: undefined;
+  NotesScreen: undefined;
 };
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, "QuranScreen">;
@@ -55,6 +56,8 @@ const QuranScreen: React.FC = () => {
   const [searchResults, setSearchResults] = useState<Surah[]>(surahs);
   const [selectedSurah, setSelectedSurah] = useState<Surah | null>(null);
   const [modalVisible, setModalVisible] = useState<boolean>(false);
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [lastSurah, setLastSurah] = useState<Surah | null>(null);
 
   // مدیریت تور
   const [tourActive, setTourActive] = useState(false);
@@ -66,6 +69,8 @@ const QuranScreen: React.FC = () => {
   const headerRef = useRef<View>(null);
   const inputRef = useRef<View>(null);
   const scrollRef = useRef<ScrollView>(null);
+  const lastSurahRef = useRef<View>(null); // ref برای بخش آخرین سوره
+  const menuButtonRef = useRef<TouchableOpacity>(null); // ref برای دکمه منو
 
   // بررسی وضعیت کلی تور و تور این صفحه
   useEffect(() => {
@@ -89,6 +94,22 @@ const QuranScreen: React.FC = () => {
     checkTourStatus();
   }, []);
 
+  // بارگذاری آخرین سوره دیده‌شده
+  useEffect(() => {
+    const loadLastSurah = async () => {
+      try {
+        const lastSurahData = await AsyncStorage.getItem("lastSurah");
+        if (lastSurahData) {
+          const parsedSurah = JSON.parse(lastSurahData);
+          setLastSurah(parsedSurah);
+        }
+      } catch (error) {
+        console.error("Error loading last surah:", error);
+      }
+    };
+    loadLastSurah();
+  }, []);
+
   // ذخیره وضعیت تور این صفحه
   const markTourAsSeen = async () => {
     try {
@@ -107,7 +128,7 @@ const QuranScreen: React.FC = () => {
     buttonBackground: "rgba(255, 255, 255, 0.2)",
     headerBackground: "rgba(255, 255, 255, 0.25)",
     borderColor: "rgb(255, 255, 255)",
-    resultItemBackground: "rgba(105, 166, 245, 0.3)",
+    resultItemBackground: "rgba(97, 194, 243, 0.3)",
   };
 
   const darkColors: Colors = {
@@ -231,14 +252,27 @@ const QuranScreen: React.FC = () => {
         justifyContent: "space-between",
         alignItems: "center",
       },
-      resultText: {
+      lastSurahContainer: {
+        backgroundColor: colors.resultItemBackground,
+        padding: 15,
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: colors.borderColor,
+        marginBottom: 20,
+        width: width * 0.9,
+        alignSelf: "center",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+      },
+      lastSurahText: {
         color: colors.buttonText,
-        fontSize: 16,
+        fontSize: 18,
         fontFamily: fontType,
       },
       scrollView: {
         maxHeight: height * 0.75,
-        backgroundColor: "rgba(255, 255, 255, 0.2)",
+        backgroundColor: "rgba(255, 255, 255, 0.15)",
         padding: 15,
         width: width * 0.95,
         alignSelf: "center",
@@ -247,6 +281,9 @@ const QuranScreen: React.FC = () => {
         borderColor: colors.borderColor,
       },
       backButton: {
+        padding: 10,
+      },
+      menuButton: {
         padding: 10,
       },
       headerText: {
@@ -313,6 +350,29 @@ const QuranScreen: React.FC = () => {
         width: "100%",
         alignItems: "center",
       },
+      menuContainer: {
+        position: "absolute",
+        top: 90,
+        right: 20,
+        backgroundColor: isDarkMode ? "#1A1A1A" : "#FFFFFF",
+        borderRadius: 5,
+        padding: 10,
+        elevation: 5,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 3,
+        zIndex: 1000,
+      },
+      menuItem: {
+        paddingVertical: 10,
+        paddingHorizontal: 15,
+      },
+      menuItemText: {
+        fontSize: 16,
+        color: isDarkMode ? "#FFFFFF" : "#000000",
+        fontFamily: fontType,
+      },
       nextButton: {
         backgroundColor: "#4CAF50",
         padding: 8,
@@ -326,7 +386,7 @@ const QuranScreen: React.FC = () => {
         fontFamily: fontType,
       },
       tooltipText: {
-        color: "#000", // متن سیاه برای خوانایی
+        color: "#000",
         fontSize: 16,
         fontFamily: fontType,
         textAlign: "center",
@@ -335,6 +395,11 @@ const QuranScreen: React.FC = () => {
       tooltipContainer: {
         padding: 10,
         maxWidth: 200,
+      },
+      resultText: {
+        color: colors.buttonText,
+        fontSize: 20,
+        fontFamily: fontType,
       },
     });
   }, [isDarkMode, fontSize, fontType, colors]);
@@ -412,6 +477,16 @@ const QuranScreen: React.FC = () => {
       position: "bottom",
     },
     {
+      target: menuButtonRef,
+      content: "اینجا می‌تونی منوی گزینه‌ها رو باز کنی و به یادداشت‌ها بری!",
+      position: "bottom",
+    },
+    {
+      target: lastSurahRef,
+      content: "آخرین سوره‌ای که دیدی رو می‌تونی از اینجا سریع باز کنی!",
+      position: "bottom",
+    },
+    {
       target: inputRef,
       content: "جستجو و مرتب‌سازی سوره‌ها رو اینجا انجام بده!",
       position: "bottom",
@@ -451,6 +526,41 @@ const QuranScreen: React.FC = () => {
               <Feather name="arrow-left" size={24} color={colors.buttonText} />
             </TouchableOpacity>
             <Text style={styles.headerText}>قرآن</Text>
+            <WalkthroughTooltip
+              isVisible={tourActive && !hasSeenTour && userWantsTour && tourStep === 1}
+              content={
+                <View style={styles.tooltipContainer}>
+                  <Text style={styles.tooltipText}>{tourSteps[1].content}</Text>
+                  <TouchableOpacity style={styles.nextButton} onPress={() => {
+                    setShowMenu(false); // بستن منو بعد از نمایش توضیحات
+                    setTourStep(2);
+                  }}>
+                    <Text style={styles.nextButtonText}>رفتن به راهنمای بعدی</Text>
+                  </TouchableOpacity>
+                </View>
+              }
+              placement={tourSteps[1].position}
+              onClose={() => {
+                setShowMenu(false);
+                setTourStep(2);
+              }}
+              showChildInTooltip={false}
+              tooltipStyle={{ backgroundColor: colors.headerBackground }}
+              target={menuButtonRef.current ? findNodeHandle(menuButtonRef.current) : undefined}
+            >
+              <TouchableOpacity
+                style={styles.menuButton}
+                ref={menuButtonRef}
+                onPress={() => {
+                  setShowMenu(!showMenu);
+                  if (tourActive && tourStep === 1) {
+                    setTourStep(2);
+                  }
+                }}
+              >
+                <Feather name="more-vertical" size={24} color={colors.buttonText} />
+              </TouchableOpacity>
+            </WalkthroughTooltip>
             <TouchableOpacity
               style={styles.favoritesButton}
               onPress={() => navigation.navigate("FavoritesScreen")}
@@ -476,19 +586,63 @@ const QuranScreen: React.FC = () => {
           </View>
         </WalkthroughTooltip>
 
+        {/* منوی کشویی */}
+        {showMenu && (
+          <View style={styles.menuContainer}>
+            <TouchableOpacity
+              style={styles.menuItem}
+              onPress={() => {
+                setShowMenu(false);
+                navigation.navigate("NotesScreen");
+              }}
+            >
+              <Text style={styles.menuItemText}>یادداشت‌ها</Text>
+            </TouchableOpacity>
+          </View>
+        )}
+
+        {/* بخش آخرین سوره دیده‌شده با تور */}
+        {lastSurah && (
+          <WalkthroughTooltip
+            isVisible={tourActive && !hasSeenTour && userWantsTour && tourStep === 2}
+            content={
+              <View style={styles.tooltipContainer}>
+                <Text style={styles.tooltipText}>{tourSteps[2].content}</Text>
+                <TouchableOpacity style={styles.nextButton} onPress={() => setTourStep(3)}>
+                  <Text style={styles.nextButtonText}>رفتن به راهنمای بعدی</Text>
+                </TouchableOpacity>
+              </View>
+            }
+            placement={tourSteps[2].position}
+            onClose={() => setTourStep(3)}
+            showChildInTooltip={false}
+            tooltipStyle={{ backgroundColor: colors.headerBackground }}
+            target={lastSurahRef.current ? findNodeHandle(lastSurahRef.current) : undefined}
+          >
+            <TouchableOpacity
+              style={styles.lastSurahContainer}
+              ref={lastSurahRef}
+              onPress={() => navigateToAyahScreen(lastSurah)}
+            >
+              <Text style={styles.lastSurahText}>آخرین سوره دیده‌شده:</Text>
+              <Text style={styles.lastSurahText}>{lastSurah.name}</Text>
+            </TouchableOpacity>
+          </WalkthroughTooltip>
+        )}
+
         {/* بخش جستجو با تور */}
         <WalkthroughTooltip
-          isVisible={tourActive && !hasSeenTour && userWantsTour && tourStep === 1}
+          isVisible={tourActive && !hasSeenTour && userWantsTour && tourStep === 3}
           content={
             <View style={styles.tooltipContainer}>
-              <Text style={styles.tooltipText}>{tourSteps[1].content}</Text>
-              <TouchableOpacity style={styles.nextButton} onPress={() => setTourStep(2)}>
+              <Text style={styles.tooltipText}>{tourSteps[3].content}</Text>
+              <TouchableOpacity style={styles.nextButton} onPress={() => setTourStep(4)}>
                 <Text style={styles.nextButtonText}>رفتن به راهنمای بعدی</Text>
               </TouchableOpacity>
             </View>
           }
-          placement={tourSteps[1].position}
-          onClose={() => setTourStep(2)}
+          placement={tourSteps[3].position}
+          onClose={() => setTourStep(4)}
           showChildInTooltip={false}
           tooltipStyle={{ backgroundColor: colors.headerBackground }}
           target={inputRef.current ? findNodeHandle(inputRef.current) : undefined}
@@ -519,16 +673,16 @@ const QuranScreen: React.FC = () => {
 
         {/* لیست سوره‌ها با تور */}
         <WalkthroughTooltip
-          isVisible={tourActive && !hasSeenTour && userWantsTour && tourStep === 2}
+          isVisible={tourActive && !hasSeenTour && userWantsTour && tourStep === 4}
           content={
             <View style={styles.tooltipContainer}>
-              <Text style={styles.tooltipText}>{tourSteps[2].content}</Text>
+              <Text style={styles.tooltipText}>{tourSteps[4].content}</Text>
               <TouchableOpacity style={styles.nextButton} onPress={markTourAsSeen}>
                 <Text style={styles.nextButtonText}>اتمام راهنما</Text>
               </TouchableOpacity>
             </View>
           }
-          placement={tourSteps[2].position}
+          placement={tourSteps[4].position}
           onClose={markTourAsSeen}
           showChildInTooltip={false}
           tooltipStyle={{ backgroundColor: colors.headerBackground }}

@@ -17041,7 +17041,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "حزين",
+    name: "ص",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17105,7 +17105,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "حزين",
+    name: "ص",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17175,7 +17175,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "حزين",
+    name: "ص",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17239,7 +17239,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "حزين",
+    name: "ص",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17288,7 +17288,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "حزين",
+    name: "ص",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,
@@ -17346,7 +17346,7 @@ export const surahs = [
   },
   {
     number: 38,
-    name: "حزين",
+    name: "ص",
     englishName: "Sad",
     englishNameTranslation: "The letter Saad",
     numberOfAyahs: 88,

@@ -7,6 +7,8 @@ export interface Ayah {
   export interface Surah {
     number: number;
     name: string;
+    name_fa : string;
+    translation: Ayah[];
     numberOfAyahs: number;
     revelationType: string;
     ayahs: Ayah[];

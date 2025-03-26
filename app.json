@@ -3,8 +3,9 @@
     "name": "QuranApp",
     "slug": "QuranApp",
     "version": "1.0.0",
+    "sdkVersion": "52.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/Frame 1.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -15,12 +16,13 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mohammad.dev1386.QuranApp"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/Frame 1.png"
     },
     "plugins": [
       "expo-router",
@@ -36,6 +38,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "cea96ded-3881-428a-9dd3-54e540ecb5a3"
+      }
+    },
+    "owner": "mohammad.dev1386"
   }
 }

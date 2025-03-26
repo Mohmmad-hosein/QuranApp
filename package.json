@@ -19,6 +19,7 @@
     "@expo/vector-icons": "^14.0.2",
     "@kanelloc/react-native-animated-header-scroll-view": "^1.0.0",
     "@react-native-async-storage/async-storage": "^2.1.0",
+    "@react-native-community/slider": "^4.5.6",
     "@react-native-picker/picker": "^2.11.0",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
@@ -26,6 +27,7 @@
     "axios": "^1.8.1",
     "cors": "^2.8.5",
     "expo": "~52.0.23",
+    "expo-av": "^15.0.2",
     "expo-blur": "~14.0.1",
     "expo-constants": "~17.0.3",
     "expo-font": "~13.0.2",
@@ -42,7 +44,7 @@
     "openai": "^4.83.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-native": "0.76.5",
+    "react-native": "0.74.5",
     "react-native-actions-sheet": "^0.9.7",
     "react-native-animatable": "^1.4.0",
     "react-native-config": "^1.5.5",
@@ -61,7 +63,8 @@
     "react-native-walkthrough-tooltip": "^1.6.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "rn-tourguide": "^3.3.2"
+    "rn-tourguide": "^3.3.2",
+    "expo-dev-client": "~5.0.14"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

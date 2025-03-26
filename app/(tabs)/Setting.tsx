@@ -18,11 +18,19 @@ import { useSettings } from "@/context/SettingsContext";
 import { Animated } from "react-native";
 import AsyncStorage from '@react-native-async-storage/async-storage'; // برای ذخیره‌سازی
 import WalkthroughTooltip from 'react-native-walkthrough-tooltip'; // برای تور
+import { useFonts } from "expo-font";
 
 const SettingScreen: React.FC = () => {
   const navigation = useNavigation();
   const { isDarkMode, toggleTheme } = useTheme();
   const { fontSize, setFontSize, fontType, setFontType } = useSettings();
+  const [loaded] = useFonts({
+    "IranSans": require("../../assets/fonts/A Iranian Sans/irsans.ttf"),
+    // "Nazanin": require("../assets/fonts/Nazanin.ttf"),
+    // "BNazanin": require("../assets/fonts/BNazanin.ttf"),
+    // // فونت‌های جدید
+  });
+
 
   // مدیریت تور
   const [tourActive, setTourActive] = useState(false);
