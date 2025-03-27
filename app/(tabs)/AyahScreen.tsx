@@ -274,7 +274,7 @@ const AyahScreen = () => {
   // محاسبه آیه فعلی با در نظر گرفتن تأخیر اولیه
   useEffect(() => {
     if (mergedSurah && duration > 0 && translatedAyahs.length > 0) {
-      const wordsPerSecond = 0.375;
+      const wordsPerSecond = 0.37;
       const initialDelay = mergedSurah.number === 1 ? 13000 : 8000;
       let cumulativeTime = initialDelay;
       let found = false;

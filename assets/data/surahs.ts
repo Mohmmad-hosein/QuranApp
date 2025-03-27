@@ -24566,7 +24566,7 @@ export const surahs = [
   },
   {
     number: 112,
-    name: "الاخلاص",
+    name: "الإخلاص",
     englishName: "Al-Ikhlas",
     englishNameTranslation: "The Sincerity",
     numberOfAyahs: 4,

@@ -26,6 +26,8 @@ import { translatePersian } from "@/assets/data/translatePersian";
 
 // وارد کردن دیتابیس سوالات و جواب‌ها
 import { qaDatabase, QAEntry } from "@/assets/data/qaDatabase";
+import { synonymDictionary } from "@/assets/data/synonymDictionary";
+import { quranFacts } from "@/assets/data/quranFacts";
 
 // تابع برای فرمت کردن زمان
 const formatTime = () => {
@@ -193,80 +195,6 @@ const endingMessages = [
   "سوال دیگه‌ای داری؟ من آماده‌ام که کمکت کنم! 🚀",
 ];
 
-// لیست دانستنی‌های قرآنی
-const quranFacts = [
-  "آیا می‌دونستی که سوره بقره با 286 آیه، طولانی‌ترین سوره قرآن هست؟",
-  "کلمه «الله» 2698 بار در قرآن تکرار شده، خیلی جالبه نه؟",
-  "سوره کوثر با 3 آیه، کوتاه‌ترین سوره قرآن هست!",
-  "آیا می‌دونستی که قرآن در مدت 23 سال بر پیامبر (ص) نازل شده؟",
-  "سوره حمد که بهش «ام‌الکتاب» هم می‌گن، 7 آیه داره و در هر نماز واجب خونده می‌شه.",
-  "کلمه «جنة» (بهشت) 77 بار در قرآن اومده، خیلی قشنگه نه؟",
-  "سوره یس که بهش «قلب قرآن» می‌گن، در مدینه نازل شده.",
-  "آیا می‌دونستی که 114 سوره در قرآن وجود داره و هر سوره با بسم‌الله شروع می‌شه، به جز سوره توبه؟",
-  "کلمه «شیطان» 88 بار در قرآن ذکر شده، جالبه نه؟",
-  "سوره ناس و فلق به «معوذتین» معروفن و برای محافظت از شر توصیه می‌شن.",
-  "آیا می‌دونستی که سوره علق اولین سوره‌ای بود که بر پیامبر (ص) نازل شد؟",
-  "کلمه «قرآن» 70 بار در خود قرآن به کار رفته، خیلی جالبه نه؟",
-  "سوره توبه تنها سوره‌ایه که با بسم‌الله شروع نمی‌شه، چون درباره قطع رابطه با مشرکین صحبت می‌کنه.",
-  "آیا می‌دونستی که سوره کهف در روز جمعه خوندنش ثواب زیادی داره؟",
-  "کلمه «جهان» 115 بار در قرآن اومده و به معنای دنیا و آخرته.",
-  "سوره مریم تنها سوره‌ایه که به نام یه زن (حضرت مریم) نام‌گذاری شده.",
-  "آیا می‌دونستی که سوره فیل درباره لشکر ابرهه و حمله به کعبه‌ست؟",
-  "کلمه «صبر» 102 بار در قرآن ذکر شده و به اهمیت صبر تأکید داره.",
-  "سوره اخلاص معادل یک‌سوم قرآن ثواب داره، خیلی قشنگه نه؟",
-  "آیا می‌دونستی که سوره ملک برای حفاظت از عذاب قبر توصیه شده؟",
-  "کلمه «رحمن» 57 بار در قرآن اومده و یکی از اسم‌های زیبای خداست.",
-  "سوره زلزال درباره زلزله روز قیامته و فقط 8 آیه داره.",
-  "آیا می‌دونستی که سوره نساء درباره حقوق زنان و خانواده صحبت می‌کنه؟",
-  "کلمه «علم» و مشتقاتش 854 بار در قرآن اومده و به اهمیت دانش اشاره داره.",
-  "سوره قصص داستان حضرت موسی (ع) رو به زیبایی روایت می‌کنه.",
-  "آیا می‌دونستی که سوره طه برای آرامش قلب خیلی توصیه شده؟",
-  "کلمه «نور» 43 بار در قرآن ذکر شده و نماد هدایت الهی هست.",
-  "سوره انفال درباره جنگ بدر و تقسیم غنایم صحبت می‌کنه.",
-  "آیا می‌دونستی که سوره رحمن به «عروس قرآن» معروفه؟",
-  "کلمه «حیاة» (زندگی) 145 بار در قرآن اومده و به زندگی دنیا و آخرت اشاره داره.",
-  "سوره واقعه درباره روز قیامت و حالات انسان‌ها در اون روزه.",
-  "آیا می‌دونستی که سوره مزمل درباره شب‌زنده‌داری پیامبر (ص) صحبت می‌کنه؟",
-  "کلمه «موت» (مرگ) 145 بار در قرآن اومده، به اندازه کلمه «حیاة»!",
-  "سوره لقمان شامل نصایح لقمان حکیم به پسرشه، خیلی آموزنده‌ست!",
-  "آیا می‌دونستی که سوره انبیاء درباره داستان 16 پیامبر صحبت می‌کنه؟",
-  "کلمه «ملائکه» (فرشتگان) 88 بار در قرآن ذکر شده، جالبه نه؟",
-  "سوره حجر درباره قوم عاد و ثمود و سرنوشتشون صحبت می‌کنه.",
-  "آیا می‌دونستی که سوره فجر درباره قیامت و سرنوشت انسان‌هاست؟",
-  "کلمه «عدل» (عدالت) 28 بار در قرآن اومده و به اهمیت عدالت تأکید داره.",
-  "سوره شمس با قسم‌های پیاپی به آفرینش خدا شروع می‌شه، خیلی زیباست!",
-  "آیا می‌دونستی که سوره ابراهیم درباره دعای حضرت ابراهیم (ع) برای مکه‌ست؟",
-  "کلمه «کتاب» 261 بار در قرآن اومده و به اهمیت کتاب‌های آسمانی اشاره داره.",
-  "سوره حج درباره احکام حج و اهمیت این فریضه صحبت می‌کنه.",
-  "آیا می‌دونستی که سوره قمر درباره معجزه شق‌القمر پیامبر (ص) هست؟",
-  "کلمه «ایمان» 811 بار در قرآن ذکر شده و به اهمیت ایمان تأکید داره.",
-  "سوره سجده درباره سجده کردن در برابر خدا و نشانه‌های اوست.",
-  "آیا می‌دونستی که سوره غافر به «سوره مؤمن» هم معروفه؟",
-  "کلمه «ذکر» 292 بار در قرآن اومده و به یاد خدا بودن رو یادآوری می‌کنه.",
-  "سوره فصلت درباره قرآن و تأثیرش بر دل‌های پاکه.",
-  "آیا می‌دونستی که سوره نمل داستان حضرت سلیمان (ع) و ملکه سبا رو روایت می‌کنه؟",
-  "کلمه «شکر» 75 بار در قرآن ذکر شده و به اهمیت شکرگزاری اشاره داره.",
-  "سوره هود داستان چند پیامبر مثل نوح، هود و صالح رو بیان می‌کنه.",
-  "آیا می‌دونستی که سوره تکویر درباره نشانه‌های قیامت صحبت می‌کنه؟",
-  "کلمه «رحمت» 339 بار در قرآن اومده و به رحمت بی‌پایان خدا اشاره داره.",
-  "سوره انشراح برای گشایش قلب پیامبر (ص) نازل شده، خیلی قشنگه نه؟",
-  "آیا می‌دونستی که سوره بلد درباره اهمیت کمک به نیازمندان صحبت می‌کنه؟",
-  "کلمه «قلب» 132 بار در قرآن اومده و به نقش قلب در هدایت اشاره داره.",
-  "سوره اعلی درباره تسبیح خدا و عظمت اوست.",
-  "آیا می‌دونستی که سوره انسان درباره پاداش نیکوکاران در بهشته؟",
-  "کلمه «هدی» (هدایت) 316 بار در قرآن ذکر شده، خیلی جالبه نه؟",
-  "سوره مطففین درباره کم‌فروشی و اهمیت انصاف صحبت می‌کنه.",
-  "آیا می‌دونستی که سوره مدثر دومین سوره‌ای بود که بر پیامبر (ص) نازل شد؟",
-  "کلمه «نفس» 295 بار در قرآن اومده و به روح و طبیعت انسان اشاره داره.",
-  "سوره تحریم درباره اهمیت اطاعت از خدا و پیامبر (ص) صحبت می‌کنه.",
-  "آیا می‌دونستی که سوره قیامت درباره روز قیامت و حسابرسی انسانهاست؟",
-  "کلمه «فضل» (فضیلت و برتری) 61 بار در قرآن اومده و به لطف خدا اشاره داره.",
-  "سوره طارق با قسم به آسمان و ستاره‌ها شروع می‌شه، خیلی زیباست!",
-  "آیا می‌دونستی که سوره مرسلات درباره فرستادگان الهی و قیامته؟",
-  "کلمه «عقل» و مشتقاتش 49 بار در قرآن اومده و به اهمیت تعقل تأکید داره.",
-  "سوره نبأ درباره خبر بزرگ قیامت و نشانه‌های خداست.",
-];
-
 // تابع برای انتخاب رندوم پیام پایانی
 const getRandomEndingMessage = () => {
   return endingMessages[Math.floor(Math.random() * endingMessages.length)];
@@ -303,8 +231,8 @@ const searchInDatabase = (inputQuestion: string) => {
 
   // مرحله 1: جستجوی دقیق (تطابق بالا)
   for (const entry of qaDatabase) {
-    const matchScore = calculateMatchScore(keywords, entry.keywords);
-    if (matchScore > highestMatchScore && matchScore > 0.8) {
+    const matchScore = calculateMatchScore(keywords, entry.keywords, false); // بدون کلمات مرتبط برای جستجوی دقیق
+    if (matchScore > highestMatchScore && matchScore >= 0.7) { // کاهش آستانه به 0.7 برای استفاده از لِوِنشاین
       highestMatchScore = matchScore;
       bestMatch = entry;
     }
@@ -317,8 +245,8 @@ const searchInDatabase = (inputQuestion: string) => {
 
   // مرحله 2: جستجوی گسترده‌تر با کلمات مرتبط
   for (const entry of qaDatabase) {
-    const matchScore = calculateMatchScore(keywords, entry.keywords, true);
-    if (matchScore > 0.3) {
+    const matchScore = calculateMatchScore(keywords, entry.keywords, true); // با کلمات مرتبط
+    if (matchScore >= 0.3) {
       relatedEntries.push(entry);
     }
   }
@@ -341,6 +269,7 @@ const AiScreen = () => {
   const [preferredStyle, setPreferredStyle] = useState<string | null>(null); // سبک ترجیحی کاربر
   const [isFirstQuestion, setIsFirstQuestion] = useState(true); // برای ردیابی اولین سوال
   const [waitingForQuranFact, setWaitingForQuranFact] = useState(false); // برای ردیابی درخواست دانستنی قرآنی
+  const MAX_HISTORY_SIZE = 100;
   const { isDarkMode, toggleTheme } = useTheme();
   const { fontSize, fontType } = useSettings();
   const navigation = useNavigation();
@@ -413,9 +342,13 @@ const AiScreen = () => {
   // ذخیره دیتابیس و تاریخچه‌ها
   const saveData = async () => {
     try {
+      // محدود کردن chatHistory و questionHistory
+      const limitedChatHistory = chatHistory.slice(-MAX_HISTORY_SIZE);
+      const limitedQuestionHistory = questionHistory.slice(-MAX_HISTORY_SIZE);
+  
       await AsyncStorage.setItem("dynamicDatabase", JSON.stringify(database));
-      await AsyncStorage.setItem("chatHistory", JSON.stringify(chatHistory));
-      await AsyncStorage.setItem("questionHistory", JSON.stringify(questionHistory));
+      await AsyncStorage.setItem("chatHistory", JSON.stringify(limitedChatHistory));
+      await AsyncStorage.setItem("questionHistory", JSON.stringify(limitedQuestionHistory));
       await AsyncStorage.setItem("newQuestions", JSON.stringify(newQuestions));
       await AsyncStorage.setItem("feedbackLog", JSON.stringify(feedbackLog));
       if (preferredStyle) {
@@ -423,6 +356,15 @@ const AiScreen = () => {
       }
     } catch (error) {
       console.error("Error saving data:", error);
+      // اطلاع‌رسانی به کاربر
+      setChatHistory(prev => [
+        ...prev,
+        {
+          role: "assistant",
+          content: "متأسفم، مشکلی در ذخیره‌سازی پیام‌ها پیش اومد. لطفاً دوباره امتحان کن.",
+          timestamp: formatTime(),
+        },
+      ]);
     }
   };
 
@@ -437,17 +379,469 @@ const AiScreen = () => {
     }
   };
 
-  // تابع برای تقسیم سوال به بخش‌ها
-const splitQuestion = (question: string): string[] => {
+  // تابع برای تشخیص سوال ریاضی
+const isMathQuestion = (question: string): boolean => {
   const normalizedQuestion = normalizeText(question);
-  // تقسیم سوال با استفاده از علامت‌های نگارشی و کلمات ربطی
-  const separators = /[،؛؟!.\-\s]+(و|یا|ولی|اما)\s+|[،؛؟!.\-\s]+/;
-  const parts = normalizedQuestion
-    .split(separators)
-    .map(part => part.trim())
-    .filter(part => part.length > 0);
-  return parts;
+
+  // الگوهای عددی (مثل 2 + 3)
+  const numericMathRegex = /(\d+\s*[\+\-\*\/]\s*\d+)/;
+  // الگوهای حرفی (مثل "سه به توان دو" یا "دو جمع پنج")
+  const verbalMathRegex = /(چند|حل|محاسبه|جواب|معادله|به توان|جمع|تفریق|ضرب|تقسیم|مسئله)/i;
+  // الگوهای معادلات (مثل x + 5 = 10)
+  const equationRegex = /[a-zA-Z]\s*[\+\-\*\/]\s*\d+\s*=\s*\d+/;
+
+  return (
+    numericMathRegex.test(normalizedQuestion) ||
+    verbalMathRegex.test(normalizedQuestion) ||
+    equationRegex.test(normalizedQuestion)
+  );
 };
+
+// دیکشنری برای تبدیل اعداد حرفی به عددی
+const numberWordsToDigits: { [key: string]: number } = {
+  "صفر": 0,
+  "یک": 1,
+  "دو": 2,
+  "سه": 3,
+  "چهار": 4,
+  "پنج": 5,
+  "شش": 6,
+  "هفت": 7,
+  "هشت": 8,
+  "نه": 9,
+  "ده": 10,
+};
+
+// دیکشنری برای تبدیل عملیات حرفی به نمادها
+const operationWordsToSymbols: { [key: string]: string } = {
+  "جمع": "+",
+  "به علاوه": "+", 
+  "به اضافه": "+",
+  "تفریق": "-",
+  "منها": "-", 
+  "ضرب": "*",
+  "در": "*", 
+  "تقسیم": "/",
+  "بر": "/", 
+  "به توان": "^",
+  "توان": "^", 
+};
+
+// تابع برای تبدیل سوال حرفی به معادل عددی
+// تابع برای تبدیل سوال حرفی به معادل عددی
+const convertVerbalMathToNumeric = (question: string): string => {
+  let converted = normalizeText(question);
+
+  // تبدیل اعداد حرفی به عددی
+  Object.keys(numberWordsToDigits).forEach(word => {
+    const regex = new RegExp(`\\b${word}\\b`, "g"); // فقط کلمات مستقل رو جایگزین کن
+    converted = converted.replace(regex, numberWordsToDigits[word].toString());
+  });
+
+  // تبدیل عملیات حرفی به نمادها
+  let hasOperation = false;
+  Object.keys(operationWordsToSymbols).forEach(word => {
+    const regex = new RegExp(`\\b${word}\\b`, "g");
+    if (regex.test(converted)) {
+      hasOperation = true;
+    }
+    converted = converted.replace(regex, operationWordsToSymbols[word]);
+  });
+
+  // اگر هیچ عملگری پیدا نشد، خطا برگردون
+  if (!hasOperation && !converted.match(/[\+\-\*\/\^]/)) {
+    throw new Error("عملگر ریاضی پیدا نشد. لطفاً از کلماتی مثل 'جمع'، 'ضرب'، 'در'، 'تقسیم' یا 'به توان' استفاده کنید.");
+  }
+
+  return converted;
+};
+
+// تابع برای حل مسائل ریاضی
+// تابع برای حل مسائل ریاضی
+const solveMathProblem = (expression: string): { result: number | string; steps: string[] } => {
+  try {
+    let steps: string[] = [];
+
+    // بررسی معادلات (مثل x + 5 = 10)
+    const equationMatch = expression.match(/([a-zA-Z])\s*([\+\-\*\/])\s*(\d+)\s*=\s*(\d+)/);
+    if (equationMatch) {
+      const variable = equationMatch[1];
+      const operator = equationMatch[2];
+      const num1 = parseFloat(equationMatch[3]);
+      const num2 = parseFloat(equationMatch[4]);
+
+      let result: number;
+      steps.push(`معادله: ${variable} ${operator} ${num1} = ${num2}`);
+
+      switch (operator) {
+        case "+":
+          result = num2 - num1;
+          steps.push(`برای حل ${variable}: ${variable} = ${num2} - ${num1}`);
+          steps.push(`${variable} = ${result}`);
+          break;
+        case "-":
+          result = num2 + num1;
+          steps.push(`برای حل ${variable}: ${variable} = ${num2} + ${num1}`);
+          steps.push(`${variable} = ${result}`);
+          break;
+        case "*":
+          result = num2 / num1;
+          steps.push(`برای حل ${variable}: ${variable} = ${num2} / ${num1}`);
+          steps.push(`${variable} = ${result}`);
+          break;
+        case "/":
+          result = num2 * num1;
+          steps.push(`برای حل ${variable}: ${variable} = ${num2} * ${num1}`);
+          steps.push(`${variable} = ${result}`);
+          break;
+        default:
+          return { result: "عملگر ناشناخته", steps: [] };
+      }
+
+      return { result, steps };
+    }
+
+    // تبدیل سوال حرفی به عددی
+    let convertedExpression = convertVerbalMathToNumeric(expression);
+
+    // جایگزینی ^ با ** برای توان
+    convertedExpression = convertedExpression.replace(/\^/g, "**");
+
+    // بررسی ترتیب عملیات (اولویت ضرب و تقسیم، سپس جمع و تفریق)
+    const tokens = convertedExpression.split(/\s+/);
+    let currentExpression = tokens.join(" ");
+
+    // حل مرحله به مرحله
+    steps.push(`عبارت: ${currentExpression}`);
+
+    // ابتدا ضرب و تقسیم
+    let i = 0;
+    while (i < tokens.length) {
+      if (tokens[i] === "*" || tokens[i] === "/") {
+        const left = parseFloat(tokens[i - 1]);
+        const right = parseFloat(tokens[i + 1]);
+        if (isNaN(left) || isNaN(right)) {
+          throw new Error("یکی از مقادیر عددی نیست. لطفاً سوال را بررسی کنید.");
+        }
+
+        let result: number;
+        if (tokens[i] === "*") {
+          result = left * right;
+          steps.push(`مرحله ${steps.length}: ${left} * ${right} = ${result}`);
+        } else {
+          if (right === 0) throw new Error("تقسیم بر صفر ممکن نیست");
+          result = left / right;
+          steps.push(`مرحله ${steps.length}: ${left} / ${right} = ${result}`);
+        }
+
+        tokens.splice(i - 1, 3, result.toString());
+        currentExpression = tokens.join(" ");
+        steps.push(`عبارت جدید: ${currentExpression}`);
+        i = 0; // از ابتدا شروع کن
+      } else {
+        i++;
+      }
+    }
+
+    // سپس جمع و تفریق
+    i = 0;
+    while (i < tokens.length) {
+      if (tokens[i] === "+" || tokens[i] === "-") {
+        const left = parseFloat(tokens[i - 1]);
+        const right = parseFloat(tokens[i + 1]);
+        if (isNaN(left) || isNaN(right)) {
+          throw new Error("یکی از مقادیر عددی نیست. لطفاً سوال را بررسی کنید.");
+        }
+
+        let result: number;
+        if (tokens[i] === "+") {
+          result = left + right;
+          steps.push(`مرحله ${steps.length}: ${left} + ${right} = ${result}`);
+        } else {
+          result = left - right;
+          steps.push(`مرحله ${steps.length}: ${left} - ${right} = ${result}`);
+        }
+
+        tokens.splice(i - 1, 3, result.toString());
+        currentExpression = tokens.join(" ");
+        steps.push(`عبارت جدید: ${currentExpression}`);
+        i = 0; // از ابتدا شروع کن
+      } else {
+        i++;
+      }
+    }
+
+    // حل توان
+    if (convertedExpression.includes("**")) {
+      const result = eval(convertedExpression); // استفاده از eval برای توان (با احتیاط)
+      if (isNaN(result)) {
+        throw new Error("خطا در محاسبه توان. لطفاً سوال را بررسی کنید.");
+      }
+      steps.push(`حل توان: ${convertedExpression} = ${result}`);
+      return { result, steps };
+    }
+
+    const finalResult = parseFloat(tokens[0]);
+    if (isNaN(finalResult)) {
+      throw new Error("نتیجه نهایی قابل محاسبه نیست. لطفاً سوال را بررسی کنید.");
+    }
+    steps.push(`جواب نهایی: ${finalResult}`);
+
+    return { result: finalResult, steps };
+  } catch (error) {
+    return { result: `خطا: ${error.message}`, steps: [] };
+  }
+};
+
+  // تغییر تابع generateAnswer برای حذف پیشنهاد سوال مرتبط
+  const generateAnswer = (userInput: string) => {
+    // بررسی درخواست دانستنی قرآنی
+    if (waitingForQuranFact) {
+      const normalizedInput = normalizeText(userInput);
+      if (normalizedInput.includes("بله") || normalizedInput.includes("آره") || normalizedInput.includes("بلی")) {
+        const fact = getRandomQuranFact();
+        const timestamp = formatTime();
+        const aiMessage = { role: "assistant", content: `${fact}\n\n${getRandomEndingMessage()}`, timestamp };
+        setChatHistory(prev => [...prev, aiMessage]);
+        setWaitingForQuranFact(false);
+        saveData();
+        return;
+      } else {
+        const timestamp = formatTime();
+        const aiMessage = { role: "assistant", content: `باشه، هر وقت خواستی بگو تا یه دانستنی قرآنی برات بگم! 😊\n\n${getRandomEndingMessage()}`, timestamp };
+        setChatHistory(prev => [...prev, aiMessage]);
+        setWaitingForQuranFact(false);
+        saveData();
+        return;
+      }
+    }
+  
+    // بررسی سوالاتی که درباره تعداد تکرار کلمات در قرآن هستند
+    const wordCountRegex = /(.*?)چند\s*بار\s*در\s*قرآن\s*تکرار\s*شده/;
+    const wordCountMatch = userInput.match(wordCountRegex);
+    if (wordCountMatch) {
+      const word = wordCountMatch[1].trim();
+      const count = countWordInQuran(word);
+      const timestamp = formatTime();
+      const userMessage = { role: "user", content: userInput, timestamp };
+      const aiMessage = { role: "assistant", content: `کلمه «${word}» ${count} بار در قرآن تکرار شده است.\n\n${getRandomEndingMessage()}`, timestamp };
+      setChatHistory(prev => [...prev, userMessage, aiMessage]);
+      setQuestionHistory(prev => [...prev, { question: userInput, answer: aiMessage.content }]);
+  
+      // نمایش پیام معرفی بعد از اولین سوال
+      if (isFirstQuestion) {
+        const introTimestamp = formatTime();
+        const introMessage = { role: "assistant", content: getRandomIntroMessage(), timestamp: introTimestamp };
+        setChatHistory(prev => [...prev, introMessage]);
+        setIsFirstQuestion(false);
+      }
+  
+      saveData();
+      return;
+    }
+  
+    // بررسی سوالاتی که درباره معنی آیه هستند
+    const ayahTranslationRegex = /آیه\s*(\d+)\s*در\s*سوره\s*(\d+)/;
+    const ayahTranslationMatch = userInput.match(ayahTranslationRegex);
+    if (ayahTranslationMatch) {
+      const ayah = parseInt(ayahTranslationMatch[1], 10);
+      const surah = parseInt(ayahTranslationMatch[2], 10);
+      const response = getAyahTranslation(surah, ayah);
+      const timestamp = formatTime();
+      const userMessage = { role: "user", content: userInput, timestamp };
+      const aiMessage = { role: "assistant", content: `${response}\n\n${getRandomEndingMessage()}`, timestamp };
+      setChatHistory(prev => [...prev, userMessage, aiMessage]);
+      setQuestionHistory(prev => [...prev, { question: userInput, answer: response }]);
+  
+      // نمایش پیام معرفی بعد از اولین سوال
+      if (isFirstQuestion) {
+        const introTimestamp = formatTime();
+        const introMessage = { role: "assistant", content: getRandomIntroMessage(), timestamp: introTimestamp };
+        setChatHistory(prev => [...prev, introMessage]);
+        setIsFirstQuestion(false);
+      }
+  
+      saveData();
+      return;
+    }
+  
+    // بررسی سوالات ریاضی
+    if (isMathQuestion(userInput)) {
+      const { result, steps } = solveMathProblem(userInput);
+      const response = `**جواب:** ${result}\n\n**مراحل حل:**\n${steps.join("\n")}\n\nاز خدا بخواه کمکت کنه که مسائل رو بهتر بفهمی (سوره طه، آیه ۱۱۴).`;
+      const timestamp = formatTime();
+      const userMessage = { role: "user", content: userInput, timestamp };
+      const aiMessage = { role: "assistant", content: `${response}\n\n${getRandomEndingMessage()}`, timestamp };
+      setChatHistory(prev => [...prev, userMessage, aiMessage]);
+      setQuestionHistory(prev => [...prev, { question: userInput, answer: response }]);
+  
+      // نمایش پیام معرفی بعد از اولین سوال
+      if (isFirstQuestion) {
+        const introTimestamp = formatTime();
+        const introMessage = { role: "assistant", content: getRandomIntroMessage(), timestamp: introTimestamp };
+        setChatHistory(prev => [...prev, introMessage]);
+        setIsFirstQuestion(false);
+      }
+  
+      saveData();
+      return;
+    }
+  
+    // تقسیم سوال به بخش‌ها
+    const questionParts = splitQuestion(userInput);
+    if (questionParts.length > 1) {
+      // سوال ترکیبی است، برای هر بخش پاسخ پیدا می‌کنیم
+      const responses: string[] = [];
+      questionParts.forEach((part, index) => {
+        // بررسی اینکه آیا بخش ریاضی است
+        if (isMathQuestion(part)) {
+          const { result, steps } = solveMathProblem(part);
+          const response = `**جواب:** ${result}\n\n**مراحل حل:**\n${steps.join("\n")}`;
+          responses.push(`**پاسخ به بخش ${index + 1} (${part}):** ${response}`);
+        } else {
+          const searchResult = searchInDatabase(part);
+          let response: string;
+  
+          if (searchResult.type === "exact") {
+            const matchedQuestion = searchResult.result as QAEntry;
+            response = getRandomAnswer(matchedQuestion.answers, preferredStyle);
+            responses.push(`**پاسخ به بخش ${index + 1} (${part}):** ${response}`);
+          } else if (searchResult.type === "combined") {
+            const relatedEntries = searchResult.result as QAEntry[];
+            response = combineAnswers(relatedEntries);
+            responses.push(`**پاسخ به بخش ${index + 1} (${part}):** ${response}`);
+          } else {
+            setNewQuestions(prev => [...prev, { question: part, status: "new" }]);
+            responses.push(`**پاسخ به بخش ${index + 1} (${part}):** سوال شما ثبت شد و به‌زودی پاسخ داده می‌شه. فعلاً نمی‌تونم به این سوال جواب بدم.`);
+          }
+        }
+      });
+  
+      // ترکیب پاسخ‌ها
+      const timestamp = formatTime();
+      const userMessage = { role: "user", content: userInput, timestamp };
+      const combinedResponse = responses.join("\n\n");
+      const aiMessage = { role: "assistant", content: `${combinedResponse}\n\n${getRandomEndingMessage()}`, timestamp };
+      setChatHistory(prev => [...prev, userMessage, aiMessage]);
+      setQuestionHistory(prev => [...prev, { question: userInput, answer: combinedResponse }]);
+  
+      // نمایش پیام معرفی بعد از اولین سوال
+      if (isFirstQuestion) {
+        const introTimestamp = formatTime();
+        const introMessage = { role: "assistant", content: getRandomIntroMessage(), timestamp: introTimestamp };
+        setChatHistory(prev => [...prev, introMessage]);
+        setIsFirstQuestion(false);
+      }
+  
+      saveData();
+      return;
+    }
+  
+    // اگر سوال ترکیبی نباشد، طبق روال قبلی عمل می‌کنیم
+    learnAndUpdate(userInput);
+  };
+
+  // تابع بهبودیافته برای پیدا کردن کلمات مرتبط
+  const findRelatedKeywords = (keyword: string): string[] => {
+    const related = synonymDictionary[keyword] || [];
+    // اضافه کردن مترادف‌های خودکار برای کلمات مشابه
+    const additionalRelated: string[] = [];
+    Object.keys(synonymDictionary).forEach(key => {
+      if (synonymDictionary[key].includes(keyword)) {
+        additionalRelated.push(key, ...synonymDictionary[key]);
+      }
+    });
+    return [...new Set([...related, ...additionalRelated])]; // حذف تکراری‌ها
+  };
+
+  // تابع محاسبه فاصله لِوِنشاین برای مقایسه شباهت دو رشته
+  const levenshteinDistance = (a: string, b: string): number => {
+    const matrix: number[][] = [];
+
+    // مقداردهی اولیه ماتریس
+    for (let i = 0; i <= b.length; i++) {
+      matrix[i] = [i];
+    }
+    for (let j = 0; j <= a.length; j++) {
+      matrix[0][j] = j;
+    }
+
+    // پر کردن ماتریس
+    for (let i = 1; i <= b.length; i++) {
+      for (let j = 1; j <= a.length; j++) {
+        if (b.charAt(i - 1) === a.charAt(j - 1)) {
+          matrix[i][j] = matrix[i - 1][j - 1];
+        } else {
+          matrix[i][j] = Math.min(
+            matrix[i - 1][j - 1] + 1, // جایگزینی
+            matrix[i][j - 1] + 1,     // درج
+            matrix[i - 1][j] + 1      // حذف
+          );
+        }
+      }
+    }
+
+    return matrix[b.length][a.length];
+  };
+
+  // تابع بهبودیافته برای محاسبه امتیاز تطابق
+  const calculateMatchScore = (inputKeywords: string[], dbKeywords: string[], includeRelated: boolean = false) => {
+    let allInputKeywords = [...inputKeywords];
+    if (includeRelated) {
+      inputKeywords.forEach(keyword => {
+        const related = findRelatedKeywords(keyword);
+        allInputKeywords = [...allInputKeywords, ...related];
+      });
+    }
+
+    let totalScore = 0;
+    let matchedCount = 0;
+
+    allInputKeywords.forEach(inputKeyword => {
+      let bestMatchScore = 0;
+      dbKeywords.forEach(dbKeyword => {
+        // محاسبه فاصله لِوِنشاین
+        const distance = levenshteinDistance(inputKeyword, dbKeyword);
+        const maxLength = Math.max(inputKeyword.length, dbKeyword.length);
+        const similarity = 1 - distance / maxLength; // شباهت بین 0 و 1
+        if (similarity > bestMatchScore) {
+          bestMatchScore = similarity;
+        }
+      });
+
+      if (bestMatchScore > 0.7) { // آستانه شباهت
+        matchedCount++;
+        totalScore += bestMatchScore;
+      }
+    });
+
+    return matchedCount > 0 ? totalScore / allInputKeywords.length : 0;
+  };
+
+  // تابع برای تقسیم سوال به بخش‌ها
+  // تابع بهبودیافته برای تقسیم سوال به بخش‌ها
+  const splitQuestion = (question: string): string[] => {
+    const normalizedQuestion = normalizeText(question);
+    // کلمات ربطی و عبارات جداکننده
+    const separators = /(و|یا|ولی|اما|همچنین|به علاوه|از طرفی|در حالی که|چون|زیرا|اگر|تا|وقتی که)\s+/i;
+    const parts = normalizedQuestion
+      .split(separators)
+      .map(part => part.trim())
+      .filter(part => part.length > 0);
+
+    // فیلتر کردن بخش‌هایی که خیلی کوتاه یا بی‌معنی هستند
+    const meaningfulParts = parts.filter(part => {
+      const words = part.split(" ");
+      return words.length > 1 || (words.length === 1 && words[0].length > 3);
+    });
+
+    // اگر هیچ بخش معناداری پیدا نشد، کل سوال رو برگردون
+    if (meaningfulParts.length === 0) {
+      return [normalizedQuestion];
+    }
+
+    return meaningfulParts;
+  };
 
   // تابع به‌روزرسانی دیتابیس با سوالات جدید
   const updateDatabaseWithNewQuestions = async () => {
@@ -551,126 +945,6 @@ const splitQuestion = (question: string): string[] => {
 
     saveData();
   };
-
-  // تابع بهبودیافته برای تولید جواب
-// تابع بهبودیافته برای تولید جواب
-const generateAnswer = (userInput: string) => {
-  // بررسی درخواست دانستنی قرآنی
-  if (waitingForQuranFact) {
-    const normalizedInput = normalizeText(userInput);
-    if (normalizedInput.includes("بله") || normalizedInput.includes("آره") || normalizedInput.includes("بلی")) {
-      const fact = getRandomQuranFact();
-      const timestamp = formatTime();
-      const aiMessage = { role: "assistant", content: `${fact}\n\n${getRandomEndingMessage()}`, timestamp };
-      setChatHistory(prev => [...prev, aiMessage]);
-      setWaitingForQuranFact(false);
-      saveData();
-      return;
-    } else {
-      const timestamp = formatTime();
-      const aiMessage = { role: "assistant", content: `باشه، هر وقت خواستی بگو تا یه دانستنی قرآنی برات بگم! 😊\n\n${getRandomEndingMessage()}`, timestamp };
-      setChatHistory(prev => [...prev, aiMessage]);
-      setWaitingForQuranFact(false);
-      saveData();
-      return;
-    }
-  }
-
-  // بررسی سوالاتی که درباره تعداد تکرار کلمات در قرآن هستند
-  const wordCountRegex = /(.*?)چند\s*بار\s*در\s*قرآن\s*تکرار\s*شده/;
-  const wordCountMatch = userInput.match(wordCountRegex);
-  if (wordCountMatch) {
-    const word = wordCountMatch[1].trim();
-    const count = countWordInQuran(word);
-    const timestamp = formatTime();
-    const userMessage = { role: "user", content: userInput, timestamp };
-    const aiMessage = { role: "assistant", content: `کلمه «${word}» ${count} بار در قرآن تکرار شده است.\n\n${getRandomEndingMessage()}`, timestamp };
-    setChatHistory(prev => [...prev, userMessage, aiMessage]);
-    setQuestionHistory(prev => [...prev, { question: userInput, answer: aiMessage.content }]);
-
-    // نمایش پیام معرفی بعد از اولین سوال
-    if (isFirstQuestion) {
-      const introTimestamp = formatTime();
-      const introMessage = { role: "assistant", content: getRandomIntroMessage(), timestamp: introTimestamp };
-      setChatHistory(prev => [...prev, introMessage]);
-      setIsFirstQuestion(false);
-    }
-
-    saveData();
-    return;
-  }
-
-  // بررسی سوالاتی که درباره معنی آیه هستند
-  const ayahTranslationRegex = /آیه\s*(\d+)\s*در\s*سوره\s*(\d+)/;
-  const ayahTranslationMatch = userInput.match(ayahTranslationRegex);
-  if (ayahTranslationMatch) {
-    const ayah = parseInt(ayahTranslationMatch[1], 10);
-    const surah = parseInt(ayahTranslationMatch[2], 10);
-    const response = getAyahTranslation(surah, ayah);
-    const timestamp = formatTime();
-    const userMessage = { role: "user", content: userInput, timestamp };
-    const aiMessage = { role: "assistant", content: `${response}\n\n${getRandomEndingMessage()}`, timestamp };
-    setChatHistory(prev => [...prev, userMessage, aiMessage]);
-    setQuestionHistory(prev => [...prev, { question: userInput, answer: response }]);
-
-    // نمایش پیام معرفی بعد از اولین سوال
-    if (isFirstQuestion) {
-      const introTimestamp = formatTime();
-      const introMessage = { role: "assistant", content: getRandomIntroMessage(), timestamp: introTimestamp };
-      setChatHistory(prev => [...prev, introMessage]);
-      setIsFirstQuestion(false);
-    }
-
-    saveData();
-    return;
-  }
-
-  // تقسیم سوال به بخش‌ها
-  const questionParts = splitQuestion(userInput);
-  if (questionParts.length > 1) {
-    // سوال ترکیبی است، برای هر بخش پاسخ پیدا می‌کنیم
-    const responses: string[] = [];
-    questionParts.forEach((part, index) => {
-      const searchResult = searchInDatabase(part);
-      let response: string;
-
-      if (searchResult.type === "exact") {
-        const matchedQuestion = searchResult.result as QAEntry;
-        response = getRandomAnswer(matchedQuestion.answers, preferredStyle);
-        responses.push(`**پاسخ به بخش ${index + 1} (${part}):** ${response}`);
-      } else if (searchResult.type === "combined") {
-        const relatedEntries = searchResult.result as QAEntry[];
-        response = combineAnswers(relatedEntries);
-        responses.push(`**پاسخ به بخش ${index + 1} (${part}):** ${response}`);
-      } else {
-        setNewQuestions(prev => [...prev, { question: part, status: "new" }]);
-        responses.push(`**پاسخ به بخش ${index + 1} (${part}):** سوال شما ثبت شد و به‌زودی پاسخ داده می‌شه. فعلاً نمی‌تونم به این سوال جواب بدم.`);
-      }
-    });
-
-    // ترکیب پاسخ‌ها
-    const timestamp = formatTime();
-    const userMessage = { role: "user", content: userInput, timestamp };
-    const combinedResponse = responses.join("\n\n");
-    const aiMessage = { role: "assistant", content: `${combinedResponse}\n\n${getRandomEndingMessage()}`, timestamp };
-    setChatHistory(prev => [...prev, userMessage, aiMessage]);
-    setQuestionHistory(prev => [...prev, { question: userInput, answer: combinedResponse }]);
-
-    // نمایش پیام معرفی بعد از اولین سوال
-    if (isFirstQuestion) {
-      const introTimestamp = formatTime();
-      const introMessage = { role: "assistant", content: getRandomIntroMessage(), timestamp: introTimestamp };
-      setChatHistory(prev => [...prev, introMessage]);
-      setIsFirstQuestion(false);
-    }
-
-    saveData();
-    return;
-  }
-
-  // اگر سوال ترکیبی نباشد، طبق روال قبلی عمل می‌کنیم
-  learnAndUpdate(userInput);
-};
 
   const handleSend = () => {
     if (!input.trim()) return;
