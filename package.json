@@ -30,6 +30,7 @@
     "expo-av": "^15.0.2",
     "expo-blur": "~14.0.1",
     "expo-constants": "~17.0.3",
+    "expo-dev-client": "~5.0.14",
     "expo-font": "~13.0.2",
     "expo-haptics": "~14.0.0",
     "expo-linear-gradient": "~14.0.2",
@@ -42,8 +43,8 @@
     "expo-web-browser": "~14.0.1",
     "express": "^4.21.2",
     "openai": "^4.83.0",
-    "react": "18.2.0",
-    "react-dom": "18.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.2.0",
     "react-native": "0.74.5",
     "react-native-actions-sheet": "^0.9.7",
     "react-native-animatable": "^1.4.0",
@@ -63,8 +64,7 @@
     "react-native-walkthrough-tooltip": "^1.6.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "rn-tourguide": "^3.3.2",
-    "expo-dev-client": "~5.0.14"
+    "rn-tourguide": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
