@@ -1,6 +1,23 @@
+# دایرکتوری‌هایی که برای بیلد نیاز نیستند
 node_modules/
 .git/
+.idea/
+.vscode/
+.expo/
+android/.gradle/
+android/.idea/
+
+# فایل‌های حجیم یا بی‌مصرف برای بیلد
 *.mp4
 *.zip
 *.psd
 *.bak
+*.log
+
+# خروجی‌ها یا فایل‌های لوکال
+*.iml
+*.DS_Store
+Thumbs.db
+
+# فایل‌های مخفی یا سیستمی
+.env
