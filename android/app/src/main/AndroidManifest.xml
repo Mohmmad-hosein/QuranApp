@@ -28,6 +28,8 @@
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="myapp"/>
         <data android:scheme="com.mohammad.dev1386.QuranApp"/>
+        <data android:scheme="quranapp"/>
+        <data android:scheme="exp+quranapp"/>
       </intent-filter>
     </activity>
   </application>
